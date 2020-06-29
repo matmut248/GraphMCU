@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    overflow-x: hidden;
+}
+.area-line{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1s linear alternate forwards;
+}
+.area-line-dashed{
+    stroke-dasharray: 9;
+    stroke-width: 2px;
+}
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+.y.axis{
+    display: none;
+}
+.x.focus .tick text{
+    font-size: 20px;
+}
+.x.focus .tick line{
+    display: none;
+}
+.x.axis .tick text{
+    font-family: cursive;
+}
+.prova{
+    height: 30;
+    width: 30;
+    background-color: blue;
+    position: fixed;
+}
+.info-box{
+    width : 260;
+    height: 470;
+    display : block;
+    justify-content: center;
+    border: black;
+    border-style: double;
+    border-radius: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
