@@ -12,6 +12,7 @@ function createFocus(){
     focus.select(".y.focus").selectAll(".tick text")
         .attr("transform","translate(-8,0)")
         .call(wrap,40)
+
 }
 
 //creazione del grafico inferiore
@@ -65,11 +66,9 @@ function updateFocusX(init,last){
         }
         
     }
-    console.log(lastValue)
     if(lastValue == 0 && lastValue != initValue){
         lastValue = mlist.length
     }
-    console.log(lastValue, mlist.slice(initValue, lastValue+1))
     var newDomain = mlist.slice(initValue, lastValue+1);
     if(newDomain[newDomain.length-1] != "Spider-Man: Far From Home"){
         newDomain.pop()
@@ -81,7 +80,7 @@ function updateFocusX(init,last){
     d3.select(".x.focus").transition().duration(updateTime)
         .call(xAxis_focus)
 
-    focus.select(".y.focus").selectAll(".tick text").on("click",function(){ popOutMenu()})
+    
 }
 
 //salvataggio lista dei film e degli eroi, set del dominio di x e y
@@ -103,7 +102,6 @@ function loadDAta(data) {
     x.domain(mlist);
     y.domain(hlist);
 
-    console.log(hlist)
 }
 
 // funzione che disegna gli eventi nel context
@@ -140,6 +138,7 @@ function createFilmArea(){
             .attr("y1",466.2)
             .attr("x2",110+d*(i+1))
             .attr("y2",8)
+            .attr("stroke-width","0.1px")
             .attr("stroke","black")
         focus.append("line").attr("class","area-line-dashed")
             .attr("x1",110+d*(i+1))
@@ -152,18 +151,34 @@ function createFilmArea(){
 }
 
 function drawIcon(){
-    if(y_focus.domain().length < 7){
-        var ticks = focus.select(".y.focus").selectAll(".tick text").style("display","none")
-        console.log(parent)
-        for (var i = 0; i < ticks["_groups"][0].length; i++){
-            var hero = ticks["_groups"][0][i].textContent
-            var img = heroToIcon[hero];
-            ticks["_groups"][0][i].append("image")
-                .attr("xlink:href","../hero_icon/"+img+".svg")
-                .attr("width", "20")
-                .attr("height", "20");
+    if(y_focus.domain().length <= 7){
+        var yL = y_focus.range()[0];
+        var deltaL = (yL-y_focus.range()[1]) / (y_focus.domain().length - 1);
+        for (var h in y_focus.domain()){
+            var c = heroToColor[y_focus.domain()[h]];
+            var img = heroToIcon[y_focus.domain()[h]];
+            var path = "../hero_icon/"+img;
+            focus.append("image")
+                .attr("class","icon")
+                .attr('x', 20)
+                .attr('y', yL - (deltaL*h) - 48)
+                .attr('width', 48)
+                .attr('height', 48)
+                .attr("xlink:href", path)
+            focus.append("circle")
+                .attr("class","icon")
+                .attr('cx', 44)
+                .attr('cy', yL - (deltaL*h) - 24)
+                .attr('r', 24)
+                .attr('stroke', c)
+                .attr("stroke-width", "2px")
+                .attr("fill", "red")
+                .attr("fill-opacity", "0.0")
         }
-        //console.log(ticks["_groups"][0][2].textContent)
+        focus.selectAll(".icon").style("transform","translate(25px,24px)")
+        focus.select(".y.focus").selectAll(".tick text").style("display","none")
+        focus.selectAll(".icon").on("click",function(){ popOutMenu()})
+
     }
 }
 
@@ -174,20 +189,6 @@ function popOutMenu(){
              .style("transform","translate(0,0)")
 }
 
-d3.json("../data/marvel-graph.JSON")
-    .then(function(data){
-        loadDAta(data);
-        createFocus();
-        createBrush();
-        createFilmArea();
-
-        //drawIcon();
-
-    })
-    .catch(function(error) {
-		console.log(error); // Some error handling here
-    });
-
 d3.json("../data/MCU-heroToIcon.json")
     .then(function(data){
         heroToIcon = data;
@@ -195,6 +196,28 @@ d3.json("../data/MCU-heroToIcon.json")
     .catch(function(error) {
         console.log(error); // Some error handling here
     });
+d3.json("../data/MCU-heroToColor.json")
+    .then(function(data){
+        heroToColor = data;
+    })
+    .catch(function(error) {
+        console.log(error); // Some error handling here
+    });
+
+d3.json("../data/marvel-graph.JSON")
+    .then(function(data){
+        loadDAta(data);
+        createFocus();
+        createBrush();
+        createFilmArea();
+
+        drawIcon();
+
+    })
+    .catch(function(error) {
+		console.log(error); // Some error handling here
+    });
+
 
 d3.json("../data/MCU-events-dataset.json")
     .then(function(data){

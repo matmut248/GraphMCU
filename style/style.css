@@ -25,7 +25,7 @@ body{
 .x.focus .tick line{
     display: none;
 }
-.x.axis .tick text{
+.x .tick text{
     font-family: cursive;
 }
 .prova{

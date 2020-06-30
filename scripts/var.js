@@ -12,6 +12,7 @@ var mlist = [];
 var hlist = [];
 var elist = [];
 var heroToIcon = {};
+var heroToColor = {};
 
 //durata animazioni
 var updateTime = 700;
@@ -20,7 +21,7 @@ var updateTime = 700;
 var x = d3.scaleBand().range([100,width-20])
 var y = d3.scaleBand().range([height-80,height*0.65])
 var x_focus = d3.scaleBand().range([0,width-120])
-var y_focus = d3.scalePoint().range([height*0.65-40,10]).domain(["Iron Man","Doctor Strange","Thor","Wasp"])
+var y_focus = d3.scalePoint().range([height*0.65-40,30]).domain(["Iron Man","Doctor Strange","Thor","Wasp","Hulk","Captain Marvel","Captain America"])
 var xAxis = d3.axisBottom(x);
 var yAxis = d3.axisLeft(y);
 var xAxis_focus = d3.axisBottom(x_focus);

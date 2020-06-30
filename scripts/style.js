@@ -10,7 +10,7 @@ function tickFocusResize(){
         case 1:
         case 2:
         case 3:
-            focus.selectAll(".x.focus .tick text").style("font-size","20px");
+            focus.selectAll(".x.focus .tick text").transition().duration(updateTime).style("font-size","20px");
             break;
         case 4: 
         case 5: 
