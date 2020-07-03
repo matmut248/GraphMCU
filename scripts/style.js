@@ -10,17 +10,17 @@ function tickFocusResize(){
         case 1:
         case 2:
         case 3:
-            focus.selectAll(".x.focus .tick text").transition().duration(updateTime).style("font-size","20px");
+            focus.selectAll(".x.focus .tick text").transition().duration(updateTime/2).style("font-size","20px");
             break;
         case 4: 
         case 5: 
-            focus.selectAll(".x.focus .tick text").style("font-size","15px");
+            focus.selectAll(".x.focus .tick text").transition().duration(updateTime/2).style("font-size","15px");
             break;
         case 6:
         case 7: 
-            focus.selectAll(".x.focus .tick text").style("font-size","10px");
+            focus.selectAll(".x.focus .tick text").transition().duration(updateTime/2).style("font-size","10px");
             break;
-        default : focus.selectAll(".x.focus .tick text").style("font-size","8px")
+        default : focus.selectAll(".x.focus .tick text").transition().duration(updateTime/2).style("font-size","8px")
     }
 }
 

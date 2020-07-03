@@ -1,6 +1,25 @@
-[
-	{
-		"film" : "Iron Man",
-		"events" : [["Tony Stark is captured by terrorist group Ten Rings in Afghanistan","Iron Man"],["S.H.I.E.L.D. Director Nick Fury tells Stark about the Avengers Initiative, 'You think you’re the only super hero in the world?'","Iron Man"]]
+{
+	"Captain America: The First Avenger" : {
+		"events": [
+			["Steve Rogers, respinto dal reclutamento della Seconda Guerra Mondiale a causa della sua bassa statura e problemi di salute, partecipa a una mostra di tecnologie future con l'amico James Bucky Barnes dove incontra il Dr. Abraham Erskine, che consente l'arruolamento militare di Rogers. Sacrificando se stesso durante l'allenamento di base, Rogers dimostra il suo valore a Erskine, al colonnello Chester Phillips, all'agente britannico Peggy Carter e all'esperimento del super-soldato della Strategic Scientific Reserve","Captain America"],
+			["Il capo dei nazisti Johann Schmidt e lo scienziato Armin Zola sfruttano le energie del Tesseract per conquistare il mondo. Proprio mentre Rogers completa con successo il trattamento del super-soldato, un assassino dei nazisti mandato da Schmidt, uccide Erskine e fugge con l'ultimo siero del super-soldato","Captain America"],
+			["Schmidt abbandona il Terzo Reich e fonda l'HYDRA, Bucky e la sua unità combattono contro la nuova organizzazione nazista ma vengono catturati","Winter Soldier"],
+			["Per salvare il suo amico, Rogers si arma di uno scudo di vibranio, il materiale più resistente del mondo, datogli da Howard Stark. Nello scontro con Schmidt si scopre che ha un teschio rosso perchè si è sottoposto ad esperimenti simili a quelli di Rogers","Captain America"],
+			["Per distruggere definitivamente l'HYDRA, Rogers recluta gli Howling Commandos, un team di 6 persone tra cui Barnes, il quale perde la vita cadendo da un treno","Winter Soldier"],
+			["Teschio rosso muore a causa del Tesseract, che verrà poi recuperato da Stark, ma Rogers precipita con l'aereo in un ghiacciaio","Captain America"],
+			["Rogers si sveglia nella moderna New York dopo essere stato ibernato per anni nel ghiacciaio","Captain America"],
+			["POST CREDIT: Nick fury porta a Steve Rogers un incarico, è la nascita del primo avenger","Nick Fury"]
+		],
+		"heroes" : ["Captain America","Winter Soldier","Nick Fury"]
+	},
+	"Captain Marvel" : {
+		"events": [
+			["ciao","Captain Marvel"],
+			["ciao","Nick Fury"],
+			["ciao","Captain Marvel"],
+			["ciao","Nick Fury"],
+			["ciao","Captain Marvel"]
+		],
+		"heroes" : ["Nick Fury","Captain Marvel"]
 	}
-]
+}
