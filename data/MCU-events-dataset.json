@@ -18,8 +18,9 @@
 			["ciao","Nick Fury"],
 			["ciao","Captain Marvel"],
 			["ciao","Nick Fury"],
+			["ciao","Doctor Strange"],
 			["ciao","Captain Marvel"]
 		],
-		"heroes" : ["Nick Fury","Captain Marvel"]
+		"heroes" : ["Nick Fury","Captain Marvel","Doctor Strange"]
 	}
 }

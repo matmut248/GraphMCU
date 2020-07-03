@@ -20,10 +20,11 @@ function createBrush(){
     
     var defaultSelection = [0,x.bandwidth()*3];
 
-    brush.extent([[0,-5],[width-120,height-80-height*0.65]])
+    brush.extent([[0,-10],[width-120,height-80-height*0.65]])
         .on("brush",function(){
+            var selection = d3.event.selection;
             var init = d3.event.selection[0]
-            var last = d3.event.selection[1]
+            var last = d3.event.selection[1]            
             var newdomX = updateFocusX(init+100,last+100);
             var newdomY = updateFocusY(newdomX);
             drawIcon(newdomY);
@@ -46,7 +47,7 @@ function createBrush(){
         .call(wrap,56);
     context.append("g")
         .attr("class","y axis")
-        .attr("transform","translate(110,20)")
+        .attr("transform","translate(110,15)")
         .call(yAxis)
     context.append("g")
         .attr("class","brush")
@@ -107,27 +108,6 @@ function updateFocusY(newdom){
     return  y_focus.domain()
 }
 
-//salvataggio lista dei film e degli eroi, set del dominio di x e y
-function loadDAta(data) { 
-    var i = 0;
-    var valuesM = data[0]["movies"];
-    var valuesH = data[0]["heroes"];
-
-    while(i < valuesM.length){
-        mlist.push(valuesM[i].name)
-        i = i + 1;
-    }
-    i = 0;
-    while(i < valuesH.length){
-        hlist.push(valuesH[i].name)
-        i = i + 1;
-    }
-
-    x.domain(mlist);
-    y.domain(hlist);
-
-}
-
 // funzione che disegna gli eventi nel context
 function drawEventContext(){
     var b = x.bandwidth()
@@ -146,9 +126,10 @@ function drawEventContext(){
                 context.append("circle")
                     .attr("class","context event")
                     .attr('cx', x(film)+delta*j+15)
-                    .attr('cy', y(hero)+20)
+                    .attr('cy', y(hero)+15)
                     .attr('r', 3)
                     .attr('fill', function(d) {return heroToColor[hero]});
+                    console.log(y(hero))
             }
         }
     }
@@ -204,7 +185,7 @@ function drawIcon(newdom){
             .attr("stroke-width", "2px")
             .attr("fill", "red")
             .attr("fill-opacity", "0.0");
-        crown.attr('cx', 44)
+        crown.attr("id",function(d){return d}).attr('cx', 44)
             .attr('r', 24)
             .attr('stroke', function(d) {return heroToColor[d]})
             .attr("stroke-width", "2px")
@@ -229,14 +210,24 @@ function drawIcon(newdom){
 
 function popOutMenu(value,type){
 
+    if(isVisible){
+        infoBox.selectAll("div").transition().duration(500).style("opacity","0").remove()
+    }
     if(type == "hero"){
         var img = heroToIcon[value];
         var descr = "Iron Man è il migliore di tutti e salverà il mondo dai pagliacci come simone"//heroDescr[hero];
 
         infoBox.style("border-color",heroToColor[value])
-        infoBox.append("div").attr("class","name").text(value);
-        infoBox.append("img").attr("class","poster").attr("src","../hero_icon/"+img);
-        infoBox.append("div").attr("class","description").text(descr);
+        infoBox.append("div").transition().delay(500)
+            .attr("class","name")
+            .text(value);
+        infoBox.append("div").append("img").transition().delay(500)
+            .attr("class","poster")
+            .attr("src","../hero_icon/"+img);
+        infoBox.append("div").transition().delay(500)
+            .attr("class","description")
+            .text(descr);
+        isVisible = true;
     }
     if(type == "film"){
         var obj = {};
@@ -244,14 +235,14 @@ function popOutMenu(value,type){
             if(filmData[i]["film"] == value)
                 obj = filmData[i];
         }
-
-        infoBox.append("div").attr("class","name").text(value);
-        infoBox.append("img")
+        infoBox.append("div").transition().delay(500).attr("class","name").text(value);
+        infoBox.append("div").append("img").transition().delay(500)
             .attr("width",200)
             .attr("src","../movie_poster/"+obj["movie_poster"]);
-        infoBox.append("div")
+        infoBox.append("div").transition().delay(550)
             .attr("font-size","12px")
             .text(obj["description"]);
+        isVisible = true;
     }
     
     infoBox.transition().duration(1000)
@@ -285,44 +276,51 @@ function updateEventFocus(){
 d3.json("../data/MCU-heroToIcon.json")
     .then(function(data){
         heroToIcon = data;
+        d3.json("../data/MCU-heroToColor.json")
+            .then(function(data){
+                heroToColor = data;
+                d3.json("../data/MCU-hero-description.json")
+                    .then(function(data){
+                        heroData = data;
+                        hlist = Object.keys(heroData);
+                        y.domain(hlist);
+                        d3.json("../data/MCU-film-description.JSON")
+                            .then(function(data){
+                                filmData = data;
+                                for(var i in filmData){
+                                    mlist.push(filmData[i]["film"])
+                                }
+                                console.log(mlist)
+                                x.domain(mlist);
+                                d3.json("../data/MCU-events-dataset.json")
+                                    .then(function(data){
+                                        elist = data;
+                                        createFocus();
+                                        createBrush();
+                                        createFilmArea();
+                                        drawEventContext();
+                                        updateEventFocus();
+                                    })
+                                    .catch(function(error) {
+                                        console.log(error); // Some error handling here
+                                    });
+                            })
+                            .catch(function(error) {
+                                console.log(error); // Some error handling here
+                            });
+                    })
+                    .catch(function(error) {
+                        console.log(error); // Some error handling here
+                    });
+            })
+            .catch(function(error) {
+                console.log(error); // Some error handling here
+            });
     })
     .catch(function(error) {
         console.log(error); // Some error handling here
-    });
-d3.json("../data/MCU-heroToColor.json")
-    .then(function(data){
-        heroToColor = data;
-    })
-    .catch(function(error) {
-        console.log(error); // Some error handling here
-    });
-d3.json("../data/MCU-film-description.JSON")
-    .then(function(data){
-        filmData = data;
-    })
-    .catch(function(error) {
-        console.log(error); // Some error handling here
-    });
-d3.json("../data/MCU-events-dataset.json")
-    .then(function(data){
-        elist = data;
-    })
-    .catch(function(error) {
-		console.log(error); // Some error handling here
     });
 
-d3.json("../data/marvel-graph.JSON")
-    .then(function(data){
-        loadDAta(data);
-        createFocus();
-        createBrush();
-        createFilmArea();
-        drawEventContext();
-        updateEventFocus();
-        
-        
 
-    })
-    .catch(function(error) {
-		console.log(error); // Some error handling here
-    });
+
+

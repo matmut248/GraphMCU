@@ -14,6 +14,7 @@ var elist = {};
 var heroToIcon = {};
 var heroToColor = {};
 var filmData = [];
+var heroData = {};
 
 //durata animazioni
 var updateTime = 700;
@@ -45,12 +46,12 @@ var brush = d3.brushX()
 //infobox dei film e degli eroi
 var infoBox = d3.select("body").append("div")
     .attr("class","info-box")
-    .style("transform","translate(275px, 0px)")
+    .style("transform","translate("+(window.innerWidth)+"px, 0px)")
 
-infoBox.append("img").attr("class","close")
+infoBox.append("img")
     .style("float","left")
     .attr('width', 24)
     .attr('height', 24)
-    .attr("src", "../hero_icon/close.png");
+    .attr("src", "../hero_icon/close.png")
 
-    
+var isVisible = false;

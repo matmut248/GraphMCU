@@ -1,5 +1,29 @@
 [
 	{
+		"film" : "Captain America: The First Avenger",
+		"released" : "2011/07/22",
+		"director" : "Joe Johnston",
+		"budget" : "$140 M",
+		"box_office" : "$370.6M",
+		"post_credit" : "Well aware that he's now living several decades in the future, Cap takes out his frustration on a punching bag, and respons to Nick Fury who just wants him to help save the world again",
+		"link_post_credit" : "https://youtu.be/QY8Ni8NLVqc",
+		"link_trailer" : "https://youtu.be/JerVrbLldXw",
+		"movie_poster" : "Captain America.jpg",
+		"description" : "Marvel's Captain America: The First Avenger focuses on the early days of the Marvel Universe when Steve Rogers volunteers to participate in an experimental program that turns him into the Super Soldier known as Captain America."
+	},
+	{
+		"film" : "Captain Marvel",
+		"released" : "2019/03/08",
+		"director" : "Anna Boden, Ryan Fleck",
+		"budget" : "$152–175 M",
+		"box_office" : "$1.128 B",
+		"post_credit" : "While Black Widow, Bruce Banner, and War Machine examining the pager at Avengers HQ, Captain Marvel suddenly shows up behind the trio and asks, 'Where's Fury?'",
+		"link_post_credit" : "https://youtu.be/igdB8cCXPZk",
+		"link_trailer" : "https://youtu.be/eh_qPcQoFK0",
+		"movie_poster" : "Captain Marvel.jpg",
+		"description" : "Captain Marvel is an extraterrestrial warrior originally from Kree, who finds herself involved in an intergalactic battle between her own people and that of the Skrulls. She came to live on Earth in 1995 as the American pilot Carol Danvers, continues to have recurring memories of her previous life. With the help of Nick Fury, the woman tries to uncover the secrets of her past by using her special superpowers to end the war with the evil Skrulls."
+	},
+	{
 		"film" : "Iron Man",
 		"released" : "2008-05-02",
 		"director" : "Jon Favreau",
@@ -10,18 +34,6 @@
 		"link_trailer" : "https://www.marvel.com/movies/iron-man",
 		"movie_poster" : "Iron Man.jpg",
 		"description" : "Iron Man tells the story of Tony Stark, a billionaire industrialist and genius inventor who is kidnapped and forced to build a devastating weapon. Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of armor and escapes captivity. When he uncovers a nefarious plot with global implications, he dons his powerful armor and vows to protect the world as Iron Man"
-	},
-	{
-		"film" : "The Incredible Hulk",
-		"released" : "2008/06/18",
-		"director" : "Louis Leterrier",
-		"budget" : "$150 M",
-		"box_office" : "$263.4 M",
-		"post_credit" : "General Ross drowns his sorrows for the whole Hulk/Abomination incident in Harlem and is interrupted by Tony Stark, who says him that a new team (The Avengers) is being assembled.",
-		"link_post_credit" : "https://youtu.be/FMSET9XhND4",
-		"link_trailer" : "https://www.marvel.com/watch/trailers-and-extras/the-incredible-hulk-official-trailer-1",
-		"movie_poster" : "The Incredible Hulk.jpg",
-		"description" : "In this new beginning, scientist Bruce Banner desperately hunts for a cure to the gamma radiation that poisoned his cells and unleashes the unbridled force of rage within him: Hulk. Living in the shadows--cut off from a life he knew and the woman he loves, Betty Ross--Banner struggles to avoid the obsessive pursuit of his nemesis, General Thunderbolt Ross and the military machinery that seeks to capture him and brutally exploit his power. As all three grapple with the secrets that led to Hulk's creation, they are confronted with a monstrous new adversary known as the Abomination, whose destructive strength exceeds even Hulk's own. One scientist must make an agonizing final choice: accept a peaceful life as Bruce Banner or find heroism in the creature he holds inside--The Incredible Hulk."
 	},
 	{
 		"film" : "Iron Man 2",
@@ -36,6 +48,18 @@
 		"description" : "With the world now aware that he is Iron Man, billionaire inventor Tony Stark faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands. With Pepper Potts and 'Rhodey' Rhodes by his side, Tony must forge new alliances and confront a powerful new enemy."
 	},
 	{
+		"film" : "The Incredible Hulk",
+		"released" : "2008/06/18",
+		"director" : "Louis Leterrier",
+		"budget" : "$150 M",
+		"box_office" : "$263.4 M",
+		"post_credit" : "General Ross drowns his sorrows for the whole Hulk/Abomination incident in Harlem and is interrupted by Tony Stark, who says him that a new team (The Avengers) is being assembled.",
+		"link_post_credit" : "https://youtu.be/FMSET9XhND4",
+		"link_trailer" : "https://www.marvel.com/watch/trailers-and-extras/the-incredible-hulk-official-trailer-1",
+		"movie_poster" : "The Incredible Hulk.jpg",
+		"description" : "In this new beginning, scientist Bruce Banner desperately hunts for a cure to the gamma radiation that poisoned his cells and unleashes the unbridled force of rage within him: Hulk. Living in the shadows--cut off from a life he knew and the woman he loves, Betty Ross--Banner struggles to avoid the obsessive pursuit of his nemesis, General Thunderbolt Ross and the military machinery that seeks to capture him and brutally exploit his power. As all three grapple with the secrets that led to Hulk's creation, they are confronted with a monstrous new adversary known as the Abomination, whose destructive strength exceeds even Hulk's own. One scientist must make an agonizing final choice: accept a peaceful life as Bruce Banner or find heroism in the creature he holds inside--The Incredible Hulk."
+	},
+	{
 		"film" : "Thor",
 		"released" : "2011/05/06",
 		"director" : "Kenneth Branagh",
@@ -46,18 +70,6 @@
 		"link_trailer" : "https://www.marvel.com/movies/thor?playlistVideoId=5806335470001",
 		"movie_poster" : "Thor.jpg",
 		"description" : "The warrior Thor is cast out of the fantastic realm of Asgard by his father Odin for his arrogance and sent to Earth to live amongst humans. Falling in love with scientist Jane Foster teaches Thor much-needed lessons, and his new-found strength comes into play as a villain from his homeland sends dark forces toward Earth."
-	},
-	{
-		"film" : "Captain America: The First Avenger",
-		"released" : "2011/07/22",
-		"director" : "Joe Johnston",
-		"budget" : "$140 M",
-		"box_office" : "$370.6M",
-		"post_credit" : "Well aware that he's now living several decades in the future, Cap takes out his frustration on a punching bag, and respons to Nick Fury who just wants him to help save the world again",
-		"link_post_credit" : "https://youtu.be/QY8Ni8NLVqc",
-		"link_trailer" : "https://youtu.be/JerVrbLldXw",
-		"movie_poster" : "Captain America.jpg",
-		"description" : "Marvel's Captain America: The First Avenger focuses on the early days of the Marvel Universe when Steve Rogers volunteers to participate in an experimental program that turns him into the Super Soldier known as Captain America."
 	},
 	{
 		"film" : "The Avengers",
@@ -120,6 +132,18 @@
 		"description" : "A space adventurer, Brash Peter Quill, becomes prey to some bounty hunters after stealing a sphere coveted by the mighty Ronan. To escape death, the man allies with four unlikely adventure companions."
 	},
 	{
+		"film" : "Guardians of the Galaxy Vol. 2",
+		"released" : "2017/04/27",
+		"director" : "James Gunn",
+		"budget" : "$200 M",
+		"box_office" : "$863.6 M",
+		"post_credit" : "Sylvester Stallone’s character, Stakar Ogord, reunited with some former Ravager companions, all of whom attended Yondu’s funeral, they decided to steal some stuff.",
+		"link_post_credit" : "https://youtu.be/A-UOd1LK7jg",
+		"link_trailer" : "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2",
+		"movie_poster" : "Guardian of the Galaxy Vol 2.jpg",
+		"description" : "Guardians are hired by a powerful alien race to complete a difficult mission. They also have to fight to keep their family together, recently found, while unraveling the mystery of the true origins of Peter Quill."
+	},
+	{
 		"film" : "Avengers: Age of Ultron",
 		"released" : "2015/05/01",
 		"director" : "Joss Whedon",
@@ -156,30 +180,6 @@
 		"description" : "Political pressure on the Avengers by the United States government creates growing disagreements between Captain America and Iron Man. When Earth is in danger, the Black Widow and Hawkeye must choose which side to stand on."
 	},
 	{
-		"film" : "Doctor Strange",
-		"released" : "2016/11/04",
-		"director" : "Scott Derrickson",
-		"budget" : "$165 M",
-		"box_office" : "$677.7 M",
-		"post_credit" : "Thor comes to earth with his brother Loki to look for his father Odin, Strange tells him that he will help them",
-		"link_post_credit" : "https://youtu.be/K4ru5ga_qDw",
-		"link_trailer" : "https://www.marvel.com/movies/doctor-strange#purchase-6",
-		"movie_poster" : "Doctor Strange.jpg",
-		"description" : "A doctor falls victim to a tragic accident, but is helped by a wizard who initiates him into the magical arts, thanks to which he manages to redeem himself and fight the dark forces that threaten humanity."
-	},
-	{
-		"film" : "Guardians of the Galaxy Vol. 2",
-		"released" : "2017/04/27",
-		"director" : "James Gunn",
-		"budget" : "$200 M",
-		"box_office" : "$863.6 M",
-		"post_credit" : "Sylvester Stallone’s character, Stakar Ogord, reunited with some former Ravager companions, all of whom attended Yondu’s funeral, they decided to steal some stuff.",
-		"link_post_credit" : "https://youtu.be/A-UOd1LK7jg",
-		"link_trailer" : "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2",
-		"movie_poster" : "Guardian of the Galaxy Vol 2.jpg",
-		"description" : "Guardians are hired by a powerful alien race to complete a difficult mission. They also have to fight to keep their family together, recently found, while unraveling the mystery of the true origins of Peter Quill."
-	},
-	{
 		"film" : "Spider-Man: Homecoming",
 		"released" : "2017/07/07",
 		"director" : "Jon Watts",
@@ -192,16 +192,16 @@
 		"description" : "Spider-Man decides to seek help from his mentor: billionaire Tony Stark, aka Iron Man. The situation becomes more complicated when the criminal known as the Vulture begins to wreak havoc in the city."
 	},
 	{
-		"film" : "Thor: Ragnarok",
-		"released" : "2017/11/03",
-		"director" : "Taika Waititi",
-		"budget" : "$180 M",
-		"box_office" : "$853.8 M",
-		"post_credit" : "Thor and Loki are aboard their new spaceship home, along with all the refugees of Asgard, trying to decide where to go next, until a huge, shadowy ship appears.",
-		"link_post_credit" : "https://youtu.be/PIDBIEuMSD8",
-		"link_trailer" : "https://www.marvel.com/movies/thor-ragnarok",
-		"movie_poster" : "Thor Ragnarok.jpg",
-		"description" : "Thor is imprisoned and deprived of his hammer, finds himself having to fight against Hulk and Hela. He must also be able to reach Asgard and stop Ragnarok, the destruction of his own world."
+		"film" : "Doctor Strange",
+		"released" : "2016/11/04",
+		"director" : "Scott Derrickson",
+		"budget" : "$165 M",
+		"box_office" : "$677.7 M",
+		"post_credit" : "Thor comes to earth with his brother Loki to look for his father Odin, Strange tells him that he will help them",
+		"link_post_credit" : "https://youtu.be/K4ru5ga_qDw",
+		"link_trailer" : "https://www.marvel.com/movies/doctor-strange#purchase-6",
+		"movie_poster" : "Doctor Strange.jpg",
+		"description" : "A doctor falls victim to a tragic accident, but is helped by a wizard who initiates him into the magical arts, thanks to which he manages to redeem himself and fight the dark forces that threaten humanity."
 	},
 	{
 		"film" : "Black Panther",
@@ -216,7 +216,19 @@
 		"description" : "Young Prince T'Challa returns home to the technologically advanced nation of Wakanda. But soon he was forced to seek help from CIA agent Everett K. Ross to defend the throne and avoid a civil war."
 	},
 	{
-		"film" : "The Avengers: Infinity War",
+		"film" : "Thor: Ragnarok",
+		"released" : "2017/11/03",
+		"director" : "Taika Waititi",
+		"budget" : "$180 M",
+		"box_office" : "$853.8 M",
+		"post_credit" : "Thor and Loki are aboard their new spaceship home, along with all the refugees of Asgard, trying to decide where to go next, until a huge, shadowy ship appears.",
+		"link_post_credit" : "https://youtu.be/PIDBIEuMSD8",
+		"link_trailer" : "https://www.marvel.com/movies/thor-ragnarok",
+		"movie_poster" : "Thor Ragnarok.jpg",
+		"description" : "Thor is imprisoned and deprived of his hammer, finds himself having to fight against Hulk and Hela. He must also be able to reach Asgard and stop Ragnarok, the destruction of his own world."
+	},
+	{
+		"film" : "Avengers: Infinity War",
 		"released" : "2018/04/27",
 		"director" : "Anthony and Joe Russo",
 		"budget" : "$316-400 M",
@@ -228,7 +240,7 @@
 		"description" : "Iron Man, Thor, Hulk and Avengers unite to fight even their most powerful enemy: the evil Thanos. The fate of the planet and humanity has never been more uncertain."
 	},
 	{
-		"film" : "Ant-Man And The Wasp",
+		"film" : "Ant-Man and the Wasp",
 		"released" : "2018/07/06",
 		"director" : "Peyton Reed",
 		"budget" : "$162–195 M",
@@ -236,23 +248,11 @@
 		"post_credit" : "Scott Lang is down in the Quantum Realm aiming to harvest some energy, but remains imprisoned because Thanos turned his friends to dust",
 		"link_post_credit" : "https://youtu.be/1RM_rOCHQwE",
 		"link_trailer" : "https://www.marvel.com/movies/ant-man-and-the-wasp",
-		"movie_poster" : "Ant Man and the Wasp.jpg",
+		"movie_poster" : "Ant-Man and the Wasp.jpg",
 		"description" : "Scott Lang is grappling with the consequences of his choices as a superhero and as a father. The man must once again put on the Ant-Man suit and fight alongside Wasp against a powerful new enemy."
 	},
 	{
-		"film" : "Captain Marvel",
-		"released" : "2019/03/08",
-		"director" : "Anna Boden, Ryan Fleck",
-		"budget" : "$152–175 M",
-		"box_office" : "$1.128 B",
-		"post_credit" : "While Black Widow, Bruce Banner, and War Machine examining the pager at Avengers HQ, Captain Marvel suddenly shows up behind the trio and asks, 'Where's Fury?'",
-		"link_post_credit" : "https://youtu.be/igdB8cCXPZk",
-		"link_trailer" : "https://youtu.be/eh_qPcQoFK0",
-		"movie_poster" : "Captain Marvel.jpg",
-		"description" : "Captain Marvel is an extraterrestrial warrior originally from Kree, who finds herself involved in an intergalactic battle between her own people and that of the Skrulls. She came to live on Earth in 1995 as the American pilot Carol Danvers, continues to have recurring memories of her previous life. With the help of Nick Fury, the woman tries to uncover the secrets of her past by using her special superpowers to end the war with the evil Skrulls."
-	},
-	{
-		"film" : "The Avengers: Endgame",
+		"film" : "Avengers: Endgame",
 		"released" : "2019/04/26",
 		"director" : "Anthony and Joe Russo",
 		"budget" : "$356 M",
@@ -264,7 +264,7 @@
 		"description" : "Drifting through space without food or water, Tony Stark sees his oxygen supply drop by the minute. Meanwhile, the remaining Avengers face an epic confrontation with Thanos."
 	},
 	{
-		"film" : "Spider-Man 2: Far From Home",
+		"film" : "Spider-Man: Far From Home",
 		"released" : "2019/07/05",
 		"director" : "Jon Watts",
 		"budget" : "$160 M",
