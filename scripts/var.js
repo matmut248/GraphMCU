@@ -33,12 +33,18 @@ var current_domain = [];
 
 //container
 var svg = d3.select("body").append("svg")
+    .style("float","left")
     .attr("height",height+5)
     .attr("width",width);
+var tips = d3.select("body").append("div").attr("class","tips").append("svg")
+    .attr("width",260)
+    .attr("height",470)
+    .style("margin-right","-100%")
+    //.style("background","red")
 
 //container dei due grafici
 var focus = svg.append("g").attr("class","focus").attr("viewbox",[0,0,width,height*0.65])
-var context = svg.append("g").attr("class","context").attr("viewbox",[0,100,width,height])
+var context = svg.append("g").attr("class","context").attr("viewbox",[0,100,width,height]).style("transform","translate(-100px,0px)")
 
 //area di selezione sul context
 var brush = d3.brushX()
@@ -53,5 +59,9 @@ infoBox.append("img")
     .attr('width', 24)
     .attr('height', 24)
     .attr("src", "../hero_icon/close.png")
+    .on("click",function(){
+        infoBox.transition().duration(updateTime).style("transform","translate("+(window.innerWidth)+"px, 0px)")
+    })
 
 var isVisible = false;
+

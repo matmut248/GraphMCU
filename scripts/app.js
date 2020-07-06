@@ -29,13 +29,14 @@ function createBrush(){
             var newdomY = updateFocusY(newdomX);
             drawIcon(newdomY);
             if(JSON.stringify(newdomX) != JSON.stringify(current_domain)){
+                createFilmArea();
                 updateEventFocus();
                 current_domain = newdomX;
             }
         })
         .on("end",function(){
             if(!d3.event.selection)
-                d3.select(".brush").call(brush.move,defaultSelection).call(tickFocusResize())
+                d3.select(".brush").call(brush.move,defaultSelection)
         })
         
     context.append("g")
@@ -54,6 +55,20 @@ function createBrush(){
         .attr("transform","translate("+ margin.innerLeft +","+ (height*0.7-18) +")")
         .call(brush)
         .call(brush.move, defaultSelection);
+}
+
+function createTips(){
+    tips.append("text").text("Benvenuto nell'universo")
+        .attr("x","5")
+        .attr("y","40")
+        .attr("font-size","23")
+        .attr("font-family","cursive")
+
+    tips.append("image").attr("xlink:href","../hero_icon/marvel-282124.png")
+        .attr("width",128)
+        .attr("height",128)
+        .attr("x","65")
+        .attr("y","20")
 }
 
 //funzione che modifica l'asse x del focus quando viene spostato il brush
@@ -80,7 +95,6 @@ function updateFocusX(init,last){
         newDomain.pop()
     }
     x_focus.domain(newDomain);
-    createFilmArea();
 
     d3.select(".x.focus").transition().duration(updateTime)
         .call(xAxis_focus)
@@ -129,7 +143,6 @@ function drawEventContext(){
                     .attr('cy', y(hero)+15)
                     .attr('r', 3)
                     .attr('fill', function(d) {return heroToColor[hero]});
-                    console.log(y(hero))
             }
         }
     }
@@ -220,6 +233,7 @@ function popOutMenu(value,type){
         infoBox.style("border-color",heroToColor[value])
         infoBox.append("div").transition().delay(500)
             .attr("class","name")
+            .style("margin-left",25)
             .text(value);
         infoBox.append("div").append("img").transition().delay(500)
             .attr("class","poster")
@@ -245,11 +259,12 @@ function popOutMenu(value,type){
         isVisible = true;
     }
     
-    infoBox.transition().duration(1000)
-           .style("transform","translate(0,0)")
+    infoBox.transition().duration(updateTime)
+           .style("transform","translate("+width+"px,0px)")
 }
 
 function updateEventFocus(){
+    
     d3.selectAll(".focus.event").transition().duration(updateTime/2).style("opacity","0")
     d3.selectAll(".focus.event").remove()
     var b = x_focus.bandwidth()
@@ -260,17 +275,30 @@ function updateEventFocus(){
             var delta = b/e.length;
             for(var j in e){
                 var hero = e[j][1]
-                context.append("circle")
+                focus.append("circle")
                     .attr("class","focus event")
                     .attr('cx', x_focus(film)+delta*j + 130)
                     .attr('cy', y_focus(hero))
                     .attr('r', 10)
                     .attr('fill', function(d) {return heroToColor[hero]})
-                    .style("opacity","0");
+                    .attr("eventDetail",e[j][0])
+                    .style("opacity","0")
+                    .on("mouseover",function(d){
+                        var x = d3.event.srcElement.getAttribute("cx");
+                        var y = d3.event.srcElement.getAttribute("cy");
+                        var e = d3.event.srcElement.getAttribute("eventDetail");
+                        console.log(e)
+                        //popUpEvent(x,y,e);
+                    });
+                    
             }
         }
     }
-    d3.selectAll(".focus.event").transition().duration(updateTime/2).style("opacity","1")
+    d3.selectAll(".focus.event").transition().duration(updateTime).style("opacity","1");
+}
+
+function popUpEvent(x,y,e){
+
 }
 
 d3.json("../data/MCU-heroToIcon.json")
@@ -290,7 +318,6 @@ d3.json("../data/MCU-heroToIcon.json")
                                 for(var i in filmData){
                                     mlist.push(filmData[i]["film"])
                                 }
-                                console.log(mlist)
                                 x.domain(mlist);
                                 d3.json("../data/MCU-events-dataset.json")
                                     .then(function(data){
@@ -300,6 +327,7 @@ d3.json("../data/MCU-heroToIcon.json")
                                         createFilmArea();
                                         drawEventContext();
                                         updateEventFocus();
+                                        createTips();
                                     })
                                     .catch(function(error) {
                                         console.log(error); // Some error handling here

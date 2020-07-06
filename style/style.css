@@ -28,7 +28,6 @@ body{
 .x .tick text{
     font-family: cursive;
 }
-
 .prova{
     height: 30;
     width: 30;
@@ -47,6 +46,11 @@ body{
     overflow-x: hidden;
     text-align: center;
     padding: 5px;
+    box-shadow: -10px 5px 20px rgb(97, 94, 94);
+    background-color: white;
+}
+.focus.event{
+    box-shadow: 1px 1px rgb(97, 94, 94);
 }
 .name{
     text-align: center;
@@ -54,6 +58,7 @@ body{
     font-size: 24px;
     transform: translate(-12px,0px);
     margin-bottom: 5px;
+    margin-left: 30px;
 }
 .poster{
     text-align: center;
@@ -64,4 +69,9 @@ body{
 .description{
     text-align: center;
     font-size: 20px;
+}
+
+.tips{
+    margin-right: -100%;
+    justify-content: center;
 }

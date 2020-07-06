@@ -8,7 +8,7 @@
 			["Per distruggere definitivamente l'HYDRA, Rogers recluta gli Howling Commandos, un team di 6 persone tra cui Barnes, il quale perde la vita cadendo da un treno","Winter Soldier"],
 			["Teschio rosso muore a causa del Tesseract, che verrà poi recuperato da Stark, ma Rogers precipita con l'aereo in un ghiacciaio","Captain America"],
 			["Rogers si sveglia nella moderna New York dopo essere stato ibernato per anni nel ghiacciaio","Captain America"],
-			["POST CREDIT: Nick fury porta a Steve Rogers un incarico, è la nascita del primo avenger","Nick Fury"]
+			["POST CREDIT: Nick fury, capo dell'agenzia segreta chiamata SHIELD, porta a Steve Rogers un incarico, è la nascita del primo avenger","Nick Fury"]
 		],
 		"heroes" : ["Captain America","Winter Soldier","Nick Fury"]
 	},
@@ -18,9 +18,109 @@
 			["ciao","Nick Fury"],
 			["ciao","Captain Marvel"],
 			["ciao","Nick Fury"],
-			["ciao","Doctor Strange"],
 			["ciao","Captain Marvel"]
 		],
-		"heroes" : ["Nick Fury","Captain Marvel","Doctor Strange"]
+		"heroes" : ["Nick Fury","Captain Marvel"]
+	},
+	"Iron Man" : {
+		"events": [
+			["Tony Stark è un miliardario che vende armi. Recatosi in una base americana in Afghanistan per presentare l'ultimo modello di missile, viene rapito da un gruppo di terroristi affinchè costruisca delle armi per loro","Iron Man"],
+			["durante il rapimento Tony viene gravemente ferito dall'esplosione di una bomba e delle scheggie gli si conficcano nel petto. Yinsen, compagno di prigionia di Tony, per salvarlo gli impianta nel petto un magnete","Iron Man"],
+			["Tony costruisce una super tuta con i materiali che servivano per costruire i missili e riesce a fuggire. James Rhodes, colonnello dell'esercito e grande amico di Tony, lo trova nel deserto e lo salva.","War Machine"],
+			["Con l'aiuto dell'intelligenza artificiale J.A.R.V.I.S. Tony costruisce una tuta più tecnologica alimentata dal reattore ark che ha nel petto, con il fine di dare la caccia a tutte le organizzazioni che utilizzano in modo scorretto le armi della Stark Industries","Iron Man"],
+			["Iron Man scopre che la Stark Industries finianzia ancora i terroristi e decide di volare in afghanistan con la tuta per ucciderli. il finanziatore è Obadiah Stane, amico di famiglia e dirigente della Stark, il quale ruba ai terroristi pezzi della tuta di tony e inizia la costruzione di una sua armatura","Iron Man"],
+			["nello scontro finale con Stane, Iron Man ordina a Pepper, sua segretaria, di fa saltare in aria la fabbrica su cui stanno combattendo e vince grazie all'esplosione. nonstante il tentativo dello SHIELD di insabbiare l'evento, Tony rivela al mondo di essere Iron Man","Iron Man"],
+			["POST CREDIT: Nick Fury propone a Tony di entrare a far parte degli Avengers","Nick Fury"]
+
+		],
+		"heroes" : ["Nick Fury", "Iron Man", "War Machine"]
+	},
+	"Iron Man 2" : {
+		"events": [],
+		"heroes" :  ["Iron Man","Black Widow", "Nick Fury", "War Machine"]
+	},
+	"Iron Man 3" : {
+		"events": [],
+		"heroes" : ["Iron Man", "War Machine"]
+	},
+	"Spider-Man Far From Home" : {
+		"events": [],
+		"heroes" : ["Spider-Man", "Nick Fury"]
+	},
+	"Spider-Man Homecoming" : {
+		"events": [],
+		"heroes" : ["Spider-Man", "Nick Fury", "Iron Man","Captain America"]
+	},
+	"The Incredible Hulk" : {
+		"events": [
+			["Dopo l'esposizione alle radiazioni gamma, il Dr. Bruce Banner è in grado di trasformarsi in una creatura con forza sovraumana e sfugge da Thaddeus Ross, un generale dell'esercito che vuole catturarlo per usarlo come arma","Hulk"]
+		],
+		"heroes" : ["Hulk"]
+	},
+	"Thor Ragnarok" : {
+		"events": [],
+		"heroes" : ["Thor","Loki","Hulk"]
+	},
+	"Thor The Dark World" : {
+		"events": [],
+		"heroes" : ["Thor","Loki"]
+	},
+	"Thor" : {
+		"events": [],
+		"heroes" : ["Thor","Hawkeye","Loki"]
+	},
+	"Guardians Of The Galaxy" : {
+		"events": [],
+		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer"]
+	},
+	"Guardians Of The Galaxy Vol 2" : {
+		"events": [],
+		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
+	},
+	"Doctor Strange" : {
+		"events": [],
+		"heroes" : ["Doctor Strange"]
+	},
+	"Captain America The Winter Soldier":{
+		"events": [],
+		"heroes" : ["Captain America","Winter Soldier","Nick Fury", "Black Widow","Falcon"]
+	},
+	"Captain America Civil War":{
+		"events": [],
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Winter Soldier", 
+					"Falcon","War Machine", "Black Panther","Hawkeye","Vision","Scarlet Witch","Ant-Man"]
+	},
+	"Black Panther":{
+		"events": [],
+		"heroes" : ["Black Panther"]
+	},
+	"Avengers":{
+		"events": [],
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
+					"Loki","War Machine", "Nick Fury","Hawkeye"]
+	},
+	"Avengers Infinity War":{
+		"events": [],
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
+					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
+					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
+	},
+	"Avengers Age Of Ultron":{
+		"events": [],
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
+					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Falcon","Vision"]
+	},
+	"Avengers Endgame":{
+		"events": [],
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
+					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
+					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
+	},
+	"Ant Man":{
+		"events": [],
+		"heroes" : ["Ant-Man"]
+	},"Ant Man And The Wasp":{
+		"events": [],
+		"heroes" : ["Ant-Man","Wasp"]
 	}
 }
