@@ -125,11 +125,6 @@ function updateFocusY(newdom){
 // funzione che disegna gli eventi nel context
 function drawEventContext(){
     var b = x.bandwidth()
-    /*context.append("circle").attr("class","context event")
-        .attr('cx', x("Thor"))
-        .attr('cy', y("Thor"))
-        .attr('r', 6)
-        .attr('fill', function(d) {return heroToColor["Thor"]})*/
    for (var i in mlist){
         var film = mlist[i]
         if(elist[film] != undefined){
@@ -139,7 +134,7 @@ function drawEventContext(){
                 var hero = e[j][1]
                 context.append("circle")
                     .attr("class","context event")
-                    .attr('cx', x(film)+delta*j+15)
+                    .attr('cx', x(film)+delta*j+13)
                     .attr('cy', y(hero)+15)
                     .attr('r', 3)
                     .attr('fill', function(d) {return heroToColor[hero]});
@@ -173,33 +168,64 @@ function createFilmArea(){
 }
 
 function drawIcon(newdom){
-    if(newdom.length <= 7){
         
         var icon = focus.selectAll(".img.icon").data(newdom)
         var crown = focus.selectAll(".crown.icon").data(newdom)
 
         icon.exit().remove();
         icon.enter().append("image").attr("class","img icon")
-            .attr('x', 20)
-            .attr('width', 48)
-            .attr('height', 48)
+            .attr('x', function(){
+                if(newdom.length<9){return 20}
+                if(newdom.length<14){return 26}
+                if(newdom.length<20){return 32}
+            })
+            .attr('width', function(){
+                if(newdom.length<9){return 48}
+                if(newdom.length<14){return 36}
+                if(newdom.length<20){return 24}
+            })
+            .attr('height', function(){
+                if(newdom.length<9){return 48}
+                if(newdom.length<14){return 36}
+                if(newdom.length<20){return 24}
+            })
             .attr("xlink:href", function(d){return "../hero_icon/"+heroToIcon[d]});
         icon.transition().duration(updateTime/2)
-            .attr('x', 20)
-            .attr('width', 48)
-            .attr('height', 48)
+            .attr('x', function(){
+                if(newdom.length<9){return 20}
+                if(newdom.length<14){return 26}
+                if(newdom.length<20){return 32}
+            })
+            .attr('width', function(){
+                if(newdom.length<9){return 48}
+                if(newdom.length<14){return 36}
+                if(newdom.length<20){return 24}
+            })
+            .attr('height', function(){
+                if(newdom.length<9){return 48}
+                if(newdom.length<14){return 36}
+                if(newdom.length<20){return 24}
+            })
             .attr("xlink:href", function(d){return "../hero_icon/"+heroToIcon[d]});
 
         crown.exit().remove();
         crown.enter().append("circle").attr("class","crown icon").attr("id",function(d){return d})
             .attr('cx', 44)
-            .attr('r', 24)
+            .attr('r', function(){
+                if(newdom.length<9){return 24}
+                if(newdom.length<14){return 18}
+                if(newdom.length<20){return 12}
+            })
             .attr('stroke', function(d) {return heroToColor[d]})
             .attr("stroke-width", "2px")
             .attr("fill", "red")
             .attr("fill-opacity", "0.0");
         crown.attr("id",function(d){return d}).attr('cx', 44)
-            .attr('r', 24)
+            .attr('r', function(){
+                if(newdom.length<9){return 24}
+                if(newdom.length<14){return 18}
+                if(newdom.length<20){return 12}
+            })
             .attr('stroke', function(d) {return heroToColor[d]})
             .attr("stroke-width", "2px")
             .attr("fill", "red")
@@ -209,7 +235,10 @@ function drawIcon(newdom){
         var deltaL = (yL-y_focus.range()[1]) / (newdom.length - 1);
         for (var h in newdom){
             var node = focus.selectAll(".img.icon")["_groups"][0][h]
-            node.setAttribute("y",yL - (deltaL*h) - 48)
+            if(newdom.length<9){var val = yL - (deltaL*h) -48}                             //////AAAAAAAAAAAAAAA
+            if(newdom.length>=9){var val = yL - (deltaL*h) -43}
+            if(newdom.length>=13){var val = yL - (deltaL*h) - 37}
+            node.setAttribute("y", val)
         }
         for (var h in newdom){
             var node = focus.selectAll(".crown.icon")["_groups"][0][h]
@@ -217,8 +246,14 @@ function drawIcon(newdom){
         }
         focus.selectAll(".icon").style("transform","translate(25px,24px)")
         focus.select(".y.focus").selectAll(".tick text").style("display","none")
+
+        if(newdom.length>18){
+            focus.selectAll(".icon").remove()
+            focus.select(".y.focus").selectAll(".tick text").style("display","block")
+            focus.selectAll(".y.focus .tick text").on("click",function(){popOutMenu(this.innerHTML,"hero")})
+        }
         focus.selectAll(".icon").on("click",function(){ popOutMenu(this.id,"hero")});
-    }
+        
 }
 
 function popOutMenu(value,type){

@@ -30,50 +30,77 @@
 			["Con l'aiuto dell'intelligenza artificiale J.A.R.V.I.S. Tony costruisce una tuta più tecnologica alimentata dal reattore ark che ha nel petto, con il fine di dare la caccia a tutte le organizzazioni che utilizzano in modo scorretto le armi della Stark Industries","Iron Man"],
 			["Iron Man scopre che la Stark Industries finianzia ancora i terroristi e decide di volare in afghanistan con la tuta per ucciderli. il finanziatore è Obadiah Stane, amico di famiglia e dirigente della Stark, il quale ruba ai terroristi pezzi della tuta di tony e inizia la costruzione di una sua armatura","Iron Man"],
 			["nello scontro finale con Stane, Iron Man ordina a Pepper, sua segretaria, di fa saltare in aria la fabbrica su cui stanno combattendo e vince grazie all'esplosione. nonstante il tentativo dello SHIELD di insabbiare l'evento, Tony rivela al mondo di essere Iron Man","Iron Man"],
-			["POST CREDIT: Nick Fury propone a Tony di entrare a far parte degli Avengers","Nick Fury"]
+			["POST CREDIT: Nick Fury propone a Tony di entrare a far parte degli Avengers, una squadra di supereroi sotto il controllo dello SHIELD","Nick Fury"]
 
 		],
 		"heroes" : ["Nick Fury", "Iron Man", "War Machine"]
 	},
 	"Iron Man 2" : {
 		"events": [],
-		"heroes" :  ["Iron Man","Black Widow", "Nick Fury", "War Machine"]
+		"heroes" :  ["Nick Fury","Iron Man","War Machine","Black Widow"]
 	},
 	"Iron Man 3" : {
-		"events": [],
-		"heroes" : ["Iron Man", "War Machine"]
+		"events": [
+			["Stark soffre di attacchi di panico in seguito alla battaglia di New York contro i Chitauri. Non riuscendo a dormire, Stark costruisce dozzine di armature di Iron Man, cosa che lo porta a litigare con la sua fidanzata Pepper Potts.","Iron Man"],
+			["Una serie di attacchi terroristici rivendicati dal terrorista conosciuto come il Mandarino lasciano le agennzie di intelligence nel buio a causa della mancanza di prove per rintracciarlo.  Il capo della sicurezza di Stark, Happy Hogan, viene gravemente ferito in uno di questi attacchi, e Stark sfida il Mandarino in diretta televisiva","Iron Man"],
+			["Il Mandarino attacca Stark in una sua villa a Malibù, ma riesce a salvarsi e a fuggire con una delle armature che ha costruito. Tony non ha abbastanza energia per tornare in California e atterra in una cittadina del Tennessee.","Iron Man"],
+			["Stark indaga sulle rovine di un attacco riconducibile al Mandarino. Scopre che le esplosioni sono state causate da soldati sottoposti al siero Extremis. Queste esplosioni sono state poi attribuite a un'organizzazione terroristica in modo da nascondere i difetti di serio. Stark affronta due agenti del Mandarino e riesce a rintracciare la base del Mandarino a Miami. Tony si infiltra nella base del Mandarino, dove scopre che il Mandarino è in realtà un attore inglese, Trevor Slattery, che si dichiara estraneo agli attacchi. Il vero Mandarino si rivela essere Killian, che si è appropriato della ricerca di Maya per curare la sua gamba zoppa e ha poi allargato il programma Extremis ai veterani di guerra feriti, usando Slattery come copertura.","Iron Man"],
+			["Dopo aver catturato Stark e ucciso Maya, Killian rapisce Pepper e le inietta il siero Extremis in modo che Stark sia obbligato ad aiutarlo a rendere stabile il siero e salvare così Pepper","Iron Man"],
+			["Killian riesce a far credere ai servizi segreti americani che il Mandarino si trovi in Medio Oriente, portando James Rhodes - ora chiamato Iron Patriot - in una trappola per rubare l'armatura, ma senza successo.","War Machine"],
+			["Killian cerca di uccidere il presidente, ma Stark riesce a salvarlo e a rinchiudere Killian in una delle sue armature, pronta all'autodistruzione, ma non riesce ad ucciderlo. Pepper, resa più forte da Extremis, va in aiuto di Tony e uccide Killian.","Iron Man"],
+			["Dopo la battaglia Tony ordina a J.A.R.V.I.S. di distruggere tutte le armature, come segno di devozione verso Pepper, mentre il vicepresidente e Slattery vengono arrestati. Tony riesce poi a stabilizzare Extremis e a rimuoverlo dal corpo di Pepper, approfittando inoltre del siero per rimuovere la scheggia bloccata vicino al suo cuore. Tony si reca alla sua villa, distrutta, e butta in mare il reattore Arc.","Iron Man"],
+			["POST CREDIT: Tony, sdraiato su un lettino, sveglia il dott. Bruce Banner, che si era addormentato ascoltando il suo racconto.","Hulk"]
+		],
+		"heroes" : ["Iron Man", "War Machine","Hulk"]
 	},
-	"Spider-Man Far From Home" : {
-		"events": [],
-		"heroes" : ["Spider-Man", "Nick Fury"]
+	"Spider-Man: Far From Home" : {
+		"events": [
+			["Otto mesi dopo gli eventi di Avengers: Endgame, Peter Parker ha ricominciato la scuola, e svela all'amico Ned di essere innamorato della sua compagna di classe MJ, e che ha intenzione, sfruttando la gita in Europa, di dichiararle il suo amore. Nel frattempo Happy Hogan, ex guardia del corpo dell'ormai deceduto Tony Stark, annuncia a Peter che Nick Fury lo chiamerà presto.","Spider-Man"],
+			["Peter parte per Venezia; mentre sta visitando la città, appare un enorme essere fatto d'acqua, che distrugge molti edifici mettendo in pericolo gli abitanti. Subito dopo interviene una figura in costume che riesce a sopraffare il mostro acquatico, con l'aiuto di Peter che cerca di limitare i danni dello scontro.","Spider-Man"],
+			["Una sera, mentre si trova nella sua camera da letto, Parker incontra Fury, che lo conduce in un laboratorio sotterraneo, dove lo avverte della presenza degli Elementali, esseri composti dai 4 elementi fondamentali: Acqua, Aria, Terra, Fuoco. Peter conosce inoltre Mysterio, l'oscura figura che ha sconfitto che ha sconfitto l'Elementale acquatico.","Nick Fury"],
+			["Si scopre che l'ultimo elementale che dovranno affrontare sarà quello di Fuoco, che apparirà a Praga. Peter, volendo godersi la vacanza con l'obiettivo di dichiarare il suo amore a MJ, rifiuta l'incarico. Il giorno dopo il ragazzo scopre che Fury ha cambiato la meta del loro viaggio, indirizzandola proprio verso Praga.","Nick Fury"],
+			["Una volta giunti in città, Peter si allea con Mysterio, e quando sbuca dal terreno l'Elementale lo affrontano. Dopo una battaglia estenuante, i due riescono a sconfiggerlo. MJ, che era riuscita a fuggire e a nascondersi, raccoglie da terra un oggetto proveniente dal luogo dello scontro.","Spider-Man"],
+			["Beck e Parker entrano in un bar per festeggiare la vittoria e il ragazzo mostra i suoi occhiali, che appartenevano a Tony Stark e che gli sono stati dati da Fury, i quali hanno incorporata l'intelligenza artificiale E.D.I.T.H., che controlla tutte le tecnologie delle Stark Industries. Dopo averglieli consegnati, pensando che Mysterio possa essere il successore di Iron Man, Peter esce dal bar e la verità viene svelata: le persone presenti nella stanza sono tutti collaboratori di Mysterio, il quale si dimostra essere solo un uomo normale, che è stato un dipendente di Stark, licenziato perché mentalmente instabile. L'uomo ha creato tutta la storia degli Elementali, che erano solo trucchi olografici.","Spider-Man"],
+			["All'appuntamento con MJ, Peter scopre con stupore che lei conosce la sua identità segreta, poi la ragazza gli mostra lo strano oggetto che ha raccolto, che proietta quello che sembra essere l'Elementale d'aria che viene combattuto da Mysterio. Peter capisce che Beck lo ha raggirato, e decide di informare Nick Fury di ciò che ha scoperto.","Spider-Man"],
+			["Nella battaglia Spider-Man distrugge quasi tutti i droni da combattimento, che finiscono per sparare proprio a Quentin Beck, che muore dopo un ultimo tentativo di uccidere il ragazzo, il quale riesce a riprendersi gli occhiali e fermare i droni. ","Spider-Man"],
+			["Nella scena durante i titoli di coda, Peter e MJ vedono, su uno schermo gigante di un grattacielo, J. Jonah Jameson del Daily Bugle mostrare un video registrato e manipolato da Beck, che incrimina Spider-Man degli attacchi a Londra e della morte di Mysterio, rivelando infine pubblicamente la vera identità del supereroe.","Spider-Man"],
+			["POST CREDIT:viene rivelato che Talos e sua moglie Soren hanno assunto le sembianze di Fury e Hill per tutto il tempo, mentre il vero Fury si trova nello spazio su un'astronave degli Skrull.","Nick Fury"]
+		],
+		"heroes" : ["Nick Fury","Spider-Man"]
 	},
-	"Spider-Man Homecoming" : {
-		"events": [],
-		"heroes" : ["Spider-Man", "Nick Fury", "Iron Man","Captain America"]
+	"Spider-Man: Homecoming" : {
+		"events": [
+			],
+		"heroes" : ["Nick Fury","Captain America","Iron Man","Spider-Man"]
 	},
 	"The Incredible Hulk" : {
 		"events": [
-			["Dopo l'esposizione alle radiazioni gamma, il Dr. Bruce Banner è in grado di trasformarsi in una creatura con forza sovraumana e sfugge da Thaddeus Ross, un generale dell'esercito che vuole catturarlo per usarlo come arma","Hulk"]
+			["Dopo l'esposizione alle radiazioni gamma, il Dr. Bruce Banner è in grado di trasformarsi in una creatura con forza sovraumana quando è arrabbiato e viene braccato da Thaddeus Ross, un generale dell'esercito che vuole catturarlo per usarlo come arma, e dal suo sottoposto Emil Blonsky","Hulk"],
+			["Blonsky si inietta un siero simile a quello del super soldato di captain America per affrontare Hulk, ma perde e Banner fugge con Betty, sua ex ragazza e figlia del generale Ross","Hulk"],
+			["in fuga, Banner e Betty incontrano Mr. Blue, il dottor Sterns, che crede di aver trovato un antidoto per banner e che rivela di aver sintetizzato un siero che trasforma le persone in Hulk grazie al sangue di Banner","Hulk"],
+			["Banner e Betty vengono catturati e presi in custodia. Blonsky si inietta il nuovo siero del dottor Sterns e diventa Abominio, un essere con forza paragonabile a quella di Hulk","Hulk"],
+			["Ross consente a Banner di trasformarsi per combattere contro Abominio e salvare la città. Dopo averlo sconfitto, Banner si ritira in colombia per allenarsi a controllare la trasformazione","Hulk"],
+			["Tony Stark incontra il generale Ross e gli parla di una squadra che sta mettendo insieme, è intenzionato a far entrare Hulk negli Avengers","Iron Man"]
 		],
-		"heroes" : ["Hulk"]
+		"heroes" : ["Iron Man","Hulk"]
 	},
-	"Thor Ragnarok" : {
+	"Thor: Ragnarok" : {
 		"events": [],
-		"heroes" : ["Thor","Loki","Hulk"]
+		"heroes" : ["Hulk","Thor","Loki"]
 	},
-	"Thor The Dark World" : {
+	"Thor: The Dark World" : {
 		"events": [],
 		"heroes" : ["Thor","Loki"]
 	},
 	"Thor" : {
 		"events": [],
-		"heroes" : ["Thor","Hawkeye","Loki"]
+		"heroes" : ["Thor","Loki","Hawkeye"]
 	},
-	"Guardians Of The Galaxy" : {
+	"Guardians of the Galaxy" : {
 		"events": [],
 		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer"]
 	},
-	"Guardians Of The Galaxy Vol 2" : {
+	"Guardians of the Galaxy Vol. 2" : {
 		"events": [],
 		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
@@ -81,11 +108,11 @@
 		"events": [],
 		"heroes" : ["Doctor Strange"]
 	},
-	"Captain America The Winter Soldier":{
+	"Captain America: The Winter Soldier":{
 		"events": [],
 		"heroes" : ["Captain America","Winter Soldier","Nick Fury", "Black Widow","Falcon"]
 	},
-	"Captain America Civil War":{
+	"Captain America: Civil War":{
 		"events": [],
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Winter Soldier", 
 					"Falcon","War Machine", "Black Panther","Hawkeye","Vision","Scarlet Witch","Ant-Man"]
@@ -94,32 +121,31 @@
 		"events": [],
 		"heroes" : ["Black Panther"]
 	},
-	"Avengers":{
+	"The Avengers":{
 		"events": [],
-		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
-					"Loki","War Machine", "Nick Fury","Hawkeye"]
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Loki","War Machine", "Nick Fury","Hawkeye"]
 	},
-	"Avengers Infinity War":{
+	"Avengers: Infinity War":{
 		"events": [],
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
 					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
-	"Avengers Age Of Ultron":{
+	"Avengers: Age Of Ultron":{
 		"events": [],
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Falcon","Vision"]
 	},
-	"Avengers Endgame":{
+	"Avengers: Endgame":{
 		"events": [],
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
 					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
-	"Ant Man":{
+	"Ant-Man":{
 		"events": [],
 		"heroes" : ["Ant-Man"]
-	},"Ant Man And The Wasp":{
+	},"Ant-Man and the Wasp":{
 		"events": [],
 		"heroes" : ["Ant-Man","Wasp"]
 	}
