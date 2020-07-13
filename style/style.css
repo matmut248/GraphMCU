@@ -62,8 +62,8 @@ body{
 }
 .poster{
     text-align: center;
-    height: 128;
-    width: 128;
+    height: 192;
+    width: 192;
     margin-bottom: 5px;
 }
 .description{
@@ -75,3 +75,30 @@ body{
     margin-right: -100%;
     justify-content: center;
 }
+.baloon{
+    
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 30px;
+    padding-top: 16px;
+    
+    
+}
+.baloon p{
+    margin-top: 11%;
+    margin-bottom: 22%;
+    padding-left: 25px;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+.prova { 
+    fill: #fff;
+    stroke: #111;
+    stroke-width: 2;
+    stroke-linejoin: bevel;
+}
+

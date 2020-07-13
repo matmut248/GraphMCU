@@ -100,6 +100,8 @@ function updateFocusX(init,last){
         .call(xAxis_focus)
     tickFocusResize();
 
+    focus.selectAll(".x .tick text").on("mouseover",function(){d3.select(this).style("text-decoration","underline")})
+    focus.selectAll(".x .tick text").on("mouseout",function(){d3.select(this).style("text-decoration","none")})
     focus.selectAll(".x .tick text").on("click",function(){popOutMenu(this.innerHTML,"film")})
 
     return x_focus.domain()
@@ -235,7 +237,7 @@ function drawIcon(newdom){
         var deltaL = (yL-y_focus.range()[1]) / (newdom.length - 1);
         for (var h in newdom){
             var node = focus.selectAll(".img.icon")["_groups"][0][h]
-            if(newdom.length<9){var val = yL - (deltaL*h) -48}                             //////AAAAAAAAAAAAAAA
+            if(newdom.length<9){var val = yL - (deltaL*h) -48}
             if(newdom.length>=9){var val = yL - (deltaL*h) -43}
             if(newdom.length>=13){var val = yL - (deltaL*h) - 37}
             node.setAttribute("y", val)
@@ -264,7 +266,7 @@ function popOutMenu(value,type){
     if(type == "hero"){
         var img = heroToIcon[value];
         var descr = "Iron Man è il migliore di tutti e salverà il mondo dai pagliacci come simone"//heroDescr[hero];
-
+        infoBox.style("overflow-y","hidden")
         infoBox.style("border-color",heroToColor[value])
         infoBox.append("div").transition().delay(500)
             .attr("class","name")
@@ -284,6 +286,7 @@ function popOutMenu(value,type){
             if(filmData[i]["film"] == value)
                 obj = filmData[i];
         }
+        infoBox.style("overflow-y","scroll")
         infoBox.append("div").transition().delay(500).attr("class","name").text(value);
         infoBox.append("div").append("img").transition().delay(500)
             .attr("width",200)
@@ -322,8 +325,11 @@ function updateEventFocus(){
                         var x = d3.event.srcElement.getAttribute("cx");
                         var y = d3.event.srcElement.getAttribute("cy");
                         var e = d3.event.srcElement.getAttribute("eventDetail");
-                        console.log(e)
-                        //popUpEvent(x,y,e);
+                        popUpEvent(parseFloat(x),parseFloat(y),e);
+                        
+                    })
+                   .on("mouseout",function(){
+                        d3.select("body").selectAll(".baloon").remove()//.transition().delay(updateTime/3)
                     });
                     
             }
@@ -333,6 +339,41 @@ function updateEventFocus(){
 }
 
 function popUpEvent(x,y,e){
+
+    d3.select("body").append("div").attr("class","baloon")
+        .style("width",dimBaloon.width)
+        .style("height",dimBaloon.height)
+        .append("p").text(e)
+
+    if((x-100) <= xL/2 && (y-y_focus.range()[1]) <= yL/2){  //siamo in alto a sinistra -> speech baloon in basso a destra
+        d3.select("body").selectAll(".baloon")
+            .style("background","url('../icon/speech-baloon-bd.png')")
+            .style("background-size","100% 100%")
+            .style("transform","translate("+(x-300)+"px,"+(y)+"px)")
+        d3.select("body").selectAll(".baloon p")
+            .style("padding-top","14%")
+    }
+    if((x-100) <= xL/2 && (y-y_focus.range()[1]) > yL/2){   //siamo in basso a sinistra -> speech baloon in alto a destra
+        d3.select("body").selectAll(".baloon")
+            .style("background","url('../icon/speech-baloon-ad.png')")
+            .style("background-size","100% 100%")
+            .style("transform","translate("+(x-300)+"px,"+(y-280)+"px)")
+    }
+    if((x-100) > xL/2 && (y-y_focus.range()[1]) <= yL/2){   //siamo in alto a destra -> speech baloon in basso a sinistra
+        d3.select("body").selectAll(".baloon")
+            .style("background","url('../icon/speech-baloon-bs.png')")
+            .style("background-size","100% 100%")
+            .style("transform","translate("+(x-670)+"px,"+(y)+"px)")
+        d3.select("body").selectAll(".baloon p")
+            .style("padding-top","12%")
+    }
+    if((x-100) > xL/2 && (y-y_focus.range()[1]) > yL/2){    //siamo in basso a destra -> speech baloon in alto a sinistra
+        d3.select("body").selectAll(".baloon")
+            .style("background","url('../icon/speech-baloon-as.png')")
+            .style("background-size","100% 98%")
+            .style("background-repeat","no-repeat")
+            .style("transform","translate("+(x-670)+"px,"+(y-290)+"px)")
+    }
 
 }
 
