@@ -4,9 +4,28 @@
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	    <meta content="utf-8" http-equiv="encoding">
         <script src="lib/d3.v5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/loader.css">
         <link rel="stylesheet" type="text/css" href="style/style.css">
     </head>
     <body>
+        <script>
+            function loaded(){
+                d3.select("body").select(".loader")
+                    .transition().duration(300)
+                    .style("opacity",0)
+                d3.select("body").select(".loader")
+                    .transition().delay(300)
+                    .remove()
+            }
+        </script>
+        <div class="loader">
+            <span class="title">Benvenuto nell'universo</span>
+            <img class = "marvel" src="/icon/marvel-282124.png" />
+            <button class="button" onclick="loaded()">INIZIAMO!</button>
+        </div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+
         <script src="scripts/var.js"></script>
         <script src="scripts/style.js"></script>
         <script src="scripts/app.js"></script>

@@ -41,34 +41,20 @@ function createBrush(){
         
     context.append("g")
         .attr("class","x axis")
-        .attr("transform","translate(10,"+ (height-60) +")")
+        .attr("transform","translate(10,"+ (height*0.26) +")")
         .call(xAxis)
     context.select(".x.axis").selectAll(".tick text")
         .attr("transform","translate(-20,25)rotate(-70)")
         .call(wrap,56);
     context.append("g")
         .attr("class","y axis")
-        .attr("transform","translate(110,15)")
+        .attr("transform","translate(110,-482)")
         .call(yAxis)
     context.append("g")
         .attr("class","brush")
-        .attr("transform","translate("+ margin.innerLeft +","+ (height*0.7-18) +")")
+        .attr("transform","translate("+ margin.innerLeft +",10)")
         .call(brush)
         .call(brush.move, defaultSelection);
-}
-
-function createTips(){
-    tips.append("text").text("Benvenuto nell'universo")
-        .attr("x","5")
-        .attr("y","40")
-        .attr("font-size","23")
-        .attr("font-family","cursive")
-
-    tips.append("image").attr("xlink:href","../hero_icon/marvel-282124.png")
-        .attr("width",128)
-        .attr("height",128)
-        .attr("x","65")
-        .attr("y","20")
 }
 
 //funzione che modifica l'asse x del focus quando viene spostato il brush
@@ -76,36 +62,25 @@ function updateFocusX(init,last){
 
     var initValue = 0, lastValue = 0;
     var deltaX = x.bandwidth()/2;
+    var newdom = [];
 
     for(var i=0; i < mlist.length; i++){
         var s = mlist[i];
-        if( ((x(s)-deltaX) <= init) && ( init <= (x(s)+deltaX)) ){
-            initValue = i;
+        if(x(s)+deltaX>=init && x(s)+deltaX<=last){
+            newdom.push(s);
         }
-        if( ((x(s)-deltaX) <= last) && ( last <= (x(s)+deltaX)) ){
-            lastValue = i;
-        }
-        
     }
-    if(lastValue == 0 && lastValue != initValue){
-        lastValue = mlist.length
-    }
-    var newDomain = mlist.slice(initValue, lastValue+1);
-    if(newDomain[newDomain.length-1] != "Spider-Man: Far From Home"){
-        newDomain.pop()
-    }
-    x_focus.domain(newDomain);
+    
+    x_focus.domain(newdom);
 
-    d3.select(".x.focus").transition().duration(updateTime)
-        .call(xAxis_focus)
+    d3.select(".x.focus").transition().duration(updateTime).call(xAxis_focus)
+
     tickFocusResize();
 
     focus.selectAll(".x .tick text").on("mouseover",function(){d3.select(this).style("text-decoration","underline")})
     focus.selectAll(".x .tick text").on("mouseout",function(){d3.select(this).style("text-decoration","none")})
     focus.selectAll(".x .tick text").on("click",function(){popOutMenu(this.innerHTML,"film")})
-
     return x_focus.domain()
-    
 }
 
 function updateFocusY(newdom){
@@ -137,7 +112,7 @@ function drawEventContext(){
                 context.append("circle")
                     .attr("class","context event")
                     .attr('cx', x(film)+delta*j+13)
-                    .attr('cy', y(hero)+15)
+                    .attr('cy', y(hero)-482)
                     .attr('r', 3)
                     .attr('fill', function(d) {return heroToColor[hero]});
             }
@@ -298,7 +273,7 @@ function popOutMenu(value,type){
     }
     
     infoBox.transition().duration(updateTime)
-           .style("transform","translate("+width+"px,0px)")
+           .style("transform","translate(-280px,0px)")
 }
 
 function updateEventFocus(){
@@ -317,7 +292,7 @@ function updateEventFocus(){
                     .attr("class","focus event")
                     .attr('cx', x_focus(film)+delta*j + 130)
                     .attr('cy', y_focus(hero))
-                    .attr('r', 10)
+                    .attr('r', 12)
                     .attr('fill', function(d) {return heroToColor[hero]})
                     .attr("eventDetail",e[j][0])
                     .style("opacity","0")
@@ -340,7 +315,7 @@ function updateEventFocus(){
 
 function popUpEvent(x,y,e){
 
-    d3.select("body").append("div").attr("class","baloon")
+    d3.select(".top").append("div").attr("class","baloon")
         .style("width",dimBaloon.width)
         .style("height",dimBaloon.height)
         .append("p").text(e)
@@ -349,31 +324,36 @@ function popUpEvent(x,y,e){
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-bd.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-300)+"px,"+(y)+"px)")
+            .style("transform","translate("+(x-20)+"px,"+(y)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("padding-top","14%")
+            .style("transform","translate(0px,-380px)")
     }
     if((x-100) <= xL/2 && (y-y_focus.range()[1]) > yL/2){   //siamo in basso a sinistra -> speech baloon in alto a destra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-ad.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-300)+"px,"+(y-280)+"px)")
+            .style("transform","translate("+(x-30)+"px,"+(y-280)+"px)")
+        d3.select("body").selectAll(".baloon p")
+            .style("transform","translate(0px,-420px)")
     }
     if((x-100) > xL/2 && (y-y_focus.range()[1]) <= yL/2){   //siamo in alto a destra -> speech baloon in basso a sinistra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-bs.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-670)+"px,"+(y)+"px)")
+            .style("transform","translate("+(x-480)+"px,"+(y)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("padding-top","12%")
+            .style("transform","translate(-10px,-380px)")
     }
     if((x-100) > xL/2 && (y-y_focus.range()[1]) > yL/2){    //siamo in basso a destra -> speech baloon in alto a sinistra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-as.png')")
             .style("background-size","100% 98%")
             .style("background-repeat","no-repeat")
-            .style("transform","translate("+(x-670)+"px,"+(y-290)+"px)")
+            .style("transform","translate("+(x-480)+"px,"+(y-280)+"px)")
+        d3.select("body").selectAll(".baloon p")
+            .style("transform","translate(-10px,-430px)")
     }
+    
 
 }
 
@@ -403,7 +383,7 @@ d3.json("../data/MCU-heroToIcon.json")
                                         createFilmArea();
                                         drawEventContext();
                                         updateEventFocus();
-                                        createTips();
+                                        //createTips();
                                     })
                                     .catch(function(error) {
                                         console.log(error); // Some error handling here

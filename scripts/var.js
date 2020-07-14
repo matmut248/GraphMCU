@@ -22,7 +22,7 @@ var updateTime = 700;
 //assi e scale del context e del focus
 var x = d3.scaleBand().range([100,width-20])
 var y = d3.scalePoint().range([height-80,height*0.65])
-var x_focus = d3.scaleBand().range([0,width-120])
+var x_focus = d3.scaleBand().range([0,window.innerWidth-180])
 var y_focus = d3.scalePoint().range([height*0.65-40,30])
 var xAxis = d3.axisBottom(x);
 var yAxis = d3.axisLeft(y);
@@ -32,19 +32,18 @@ var yAxis_focus = d3.axisLeft(y_focus);
 var current_domain = [];
 
 //container
-var svg = d3.select("body").append("svg")
+var svg = d3.select(".top").append("svg")
     .style("float","left")
-    .attr("height",height+5)
+    .attr("height",height*0.66)
+    .attr("width",window.innerWidth);
+var svgBottom = d3.select(".bottom").append("svg")
+    .style("float","left")
+    .attr("height",height*0.34)
     .attr("width",width);
-var tips = d3.select("body").append("div").attr("class","tips").append("svg")
-    .attr("width",260)
-    .attr("height",470)
-    .style("margin-right","-100%")
-    //.style("background","red")
 
 //container dei due grafici
-var focus = svg.append("g").attr("class","focus").attr("viewbox",[0,0,width,height*0.65])
-var context = svg.append("g").attr("class","context").attr("viewbox",[0,100,width,height]).style("transform","translate(-100px,0px)")
+var focus = svg.append("g").attr("class","focus").attr("viewbox",[0,0,window.innerWidth,height*0.65])
+var context = svgBottom.append("g").attr("class","context").attr("viewbox",[0,0,width,height]).style("transform","translate(-100px,0px)")
 
 //area di selezione sul context
 var brush = d3.brushX()
@@ -52,7 +51,7 @@ var brush = d3.brushX()
 //infobox dei film e degli eroi
 var infoBox = d3.select("body").append("div")
     .attr("class","info-box")
-    .style("transform","translate("+(window.innerWidth)+"px, 0px)")
+    .style("transform","translate(20px, 0px)")
 
 infoBox.append("img")
     .style("float","left")
@@ -60,7 +59,7 @@ infoBox.append("img")
     .attr('height', 24)
     .attr("src", "../hero_icon/close.png")
     .on("click",function(){
-        infoBox.transition().duration(updateTime).style("transform","translate("+(window.innerWidth)+"px, 0px)")
+        infoBox.transition().duration(updateTime).style("transform","translate(20px, 0px)")
     })
 
 var isVisible = false;
