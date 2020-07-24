@@ -22,9 +22,33 @@
             <span class="title">Benvenuto nell'universo</span>
             <img class = "marvel" src="/icon/marvel-282124.png" />
             <button class="button" onclick="loaded()">INIZIAMO!</button>
+
+            <span class="tips" id="tip1">Clicca sull'icona dell'eroe o sul titolo del film <br> per avere delle info aggiuntive</span>
+            <span class="tips" id="tip2">Sposta il mouse sull'evento e<br>leggi la sua descrizione</span>
+            <span class="tips" id="tip3">Trascina l'area selezionata per viaggiare nel tempo<br>e rivivere tutti i film Marvel</span>
+            <span class="tips" id="tip4">Se vuoi concentrarti solo su alcuni eroi o film,<br>Clicca qui e selezionali</span>
+            <svg class="pointer">
+                <path class="line" d="M280,100 Q330,220 130,340"></path>
+                <path class="arrow" d="M130,340 L133,348 L120,344 L127,332 Z"></path>
+                <path class="line" d="M210,286 Q190,380 270,460"></path>
+                <path class="arrow" d="M270,460 L277,454 V468 L262,467 Z"></path>
+
+                <path class="line" d="M1230,200 Q1200,130 1130,125"></path>
+                <path class="arrow" d="M1130,125 L1132,115 L1118,123 L1127,135 Z"></path>
+
+                <path class="line" d="M397,580 Q330,700 180,640"></path>
+                <path class="arrow" d="M180,640 L175,650 L170,634 L185,630 Z"></path>
+            </svg>
+            
         </div>
         <div class="top"></div>
-        <div class="bottom"></div>
+        <div class="bottom">
+            <svg></svg>
+            <div class="filter">
+                <button style="font-size: 18px;">Filtra per eroe</button>
+                <button style="font-size: 18px;">Filtra per film</button>
+            </div>
+        </div>
 
         <script src="scripts/var.js"></script>
         <script src="scripts/style.js"></script>

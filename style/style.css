@@ -3,7 +3,10 @@ body{
     flex-direction: column;
     overflow-x: hidden;
 }
-
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
 
 .area-line{
     stroke-dasharray: 1000;
@@ -78,10 +81,6 @@ body{
     font-size: 20px;
 }
 
-.tips{
-    margin-right: -100%;
-    justify-content: center;
-}
 .baloon{
     
     background-color: transparent;

@@ -106,7 +106,10 @@
 		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
 	"Doctor Strange" : {
-		"events": [],
+		"events": [
+			["ciao","Doctor Strange"],
+			["ciao","Doctor Strange"]
+		],
 		"heroes" : ["Doctor Strange"]
 	},
 	"Captain America: The Winter Soldier":{
@@ -132,7 +135,7 @@
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
 					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
-	"Avengers: Age Of Ultron":{
+	"Avengers: Age of Ultron":{
 		"events": [],
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor",
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Falcon","Vision"]

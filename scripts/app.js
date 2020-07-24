@@ -93,6 +93,7 @@ function updateFocusY(newdom){
         }
     }
     y_focus.domain(h)
+
     d3.select(".y.focus").transition().duration(updateTime)
         .call(yAxis_focus)
 
@@ -212,14 +213,21 @@ function drawIcon(newdom){
         var deltaL = (yL-y_focus.range()[1]) / (newdom.length - 1);
         for (var h in newdom){
             var node = focus.selectAll(".img.icon")["_groups"][0][h]
-            if(newdom.length<9){var val = yL - (deltaL*h) -48}
+            if(newdom.length == 1){var val = yL/2 - 37}
+            if(newdom.length > 1){var val = yL - (deltaL*h) -48}
             if(newdom.length>=9){var val = yL - (deltaL*h) -43}
             if(newdom.length>=13){var val = yL - (deltaL*h) - 37}
             node.setAttribute("y", val)
         }
         for (var h in newdom){
             var node = focus.selectAll(".crown.icon")["_groups"][0][h]
-            node.setAttribute("cy",yL - (deltaL*h) - 24)
+            if(newdom.length == 1){
+                node.setAttribute("cy", yL/2 + y_focus.range()[1] - 42)
+            }
+            else{
+                node.setAttribute("cy", yL - (deltaL*h) - 24)
+            }
+            
         }
         focus.selectAll(".icon").style("transform","translate(25px,24px)")
         focus.select(".y.focus").selectAll(".tick text").style("display","none")
@@ -383,7 +391,6 @@ d3.json("../data/MCU-heroToIcon.json")
                                         createFilmArea();
                                         drawEventContext();
                                         updateEventFocus();
-                                        //createTips();
                                     })
                                     .catch(function(error) {
                                         console.log(error); // Some error handling here

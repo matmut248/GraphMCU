@@ -36,7 +36,7 @@ var svg = d3.select(".top").append("svg")
     .style("float","left")
     .attr("height",height*0.66)
     .attr("width",window.innerWidth);
-var svgBottom = d3.select(".bottom").append("svg")
+var svgBottom = d3.select(".bottom svg")
     .style("float","left")
     .attr("height",height*0.34)
     .attr("width",width);
@@ -67,4 +67,9 @@ var isVisible = false;
 var xL = x_focus.range()[1]-x_focus.range()[0]
 var yL = y_focus.range()[0]-y_focus.range()[1]
 var dimBaloon = {width : xL/3 , height : yL * 0.6, margin : 5}
-var baloonRendered = false;
+
+d3.select(".filter")
+    .style("width",window.innerWidth-width+100)
+    .style("height",height*0.34)
+    //.style("background-color","red")
+    .style("float","left")
