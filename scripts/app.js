@@ -24,7 +24,8 @@ function createBrush(){
         .on("brush",function(){
             var selection = d3.event.selection;
             var init = d3.event.selection[0]
-            var last = d3.event.selection[1]            
+            var last = d3.event.selection[1]   
+            brushPos = [init,last]         
             var newdomX = updateFocusX(init+100,last+100);
             var newdomY = updateFocusY(newdomX);
             drawIcon(newdomY);
@@ -33,10 +34,29 @@ function createBrush(){
                 updateEventFocus();
                 current_domain = newdomX;
             }
+            d3.selectAll(".checkbox").property("checked", false)
+            firstSelectionMovie = true
+            firstSelectionHero = true
         })
         .on("end",function(){
-            if(!d3.event.selection)
+            if(!d3.event.selection){
+                d3.selectAll(".checkbox").property("checked", false)
+                firstSelectionMovie = true
+                firstSelectionHero = true
                 d3.select(".brush").call(brush.move,defaultSelection)
+                updateEventFocus()
+            }
+            else{
+                var selection = d3.event.selection;
+                var init = d3.event.selection[0]
+                var last = d3.event.selection[1]  
+                if(numberoFilmInBrush(init, last) > 8){
+                    d3.select(".brush").transition().delay(100).duration(500).call(brush.move,defaultSelection)
+                    d3.selectAll(".checkbox").property("checked", false)
+                    firstSelectionMovie = true
+                    firstSelectionHero = true
+                }
+            }
         })
         
     context.append("g")
@@ -365,6 +385,232 @@ function popUpEvent(x,y,e){
 
 }
 
+
+
+
+function numberoFilmInBrush(init, last){
+    var initValue = 0, lastValue = 0;
+    var deltaX = x.bandwidth()/2;
+
+    for(var i=0; i < mlist.length; i++){
+        var s = mlist[i];
+        if( ((x(s)-deltaX) <= init) && ( init <= (x(s)+deltaX)) ){
+            initValue = i;
+        }
+        if( ((x(s)-deltaX) <= last) && ( last <= (x(s)+deltaX)) ){
+            lastValue = i;
+        }
+        
+    }
+    if(lastValue == 0 && lastValue != initValue){
+        lastValue = mlist.length
+    }
+    var newDomain = mlist.slice(initValue, lastValue+1);
+    if(newDomain[newDomain.length-1] != "Spider-Man: Far From Home"){
+        newDomain.pop()
+    }
+    return newDomain.length+2
+}
+
+function updateEventFocusWithFilter(){
+    
+    d3.selectAll(".focus.event").transition().duration(updateTime/2).style("opacity","0")
+    d3.selectAll(".focus.event").remove()
+    var b = x_focus.bandwidth()
+    for(var i in x_focus.domain()){
+        var film = x_focus.domain()[i];
+        if(elist[film] != undefined){
+            var e = elist[film]["events"];
+            var delta = b/e.length;
+            for(var j in e){
+                var hero = e[j][1]
+                if(y_focus.domain().includes(hero)){
+                focus.append("circle")
+                    .attr("class","focus event")
+                    .attr('cx', x_focus(film)+delta*j + 130)
+                    .attr('cy', y_focus(hero))
+                    .attr('r', 10)
+                    .attr('fill', function(d) {return heroToColor[hero]})
+                    .attr("eventDetail",e[j][0])
+                    .style("opacity","0")
+                    .on("mouseover",function(d){
+                        var x = d3.event.srcElement.getAttribute("cx");
+                        var y = d3.event.srcElement.getAttribute("cy");
+                        var e = d3.event.srcElement.getAttribute("eventDetail");
+                        console.log(e)
+                        //popUpEvent(x,y,e);
+                    });
+                }
+                    
+            }
+        }
+    }
+    d3.selectAll(".focus.event").transition().duration(updateTime).style("opacity","1");
+}
+
+function createFilterPage(){
+
+    var filterPageSelectionHeroList = d3.select(".filter-box-hero")
+                                    .append("h3")
+                                    .text("Seleziona l'eroe")
+                                    .append("ul")
+
+    var filterPageSelectionMovieList = d3.select(".filter-box-movie")
+                                    .append("h3")
+                                    .text("Seleziona il film")
+                                    .append("ul")
+
+    var domainBeforeFilter = [];
+   
+    hlist.forEach(function(hero){
+        elem = filterPageSelectionHeroList.append("li")
+        id = hero + "_hero_checkbox"
+        elem.append("input")
+        .attr("id",id)
+        .attr("class", "checkbox")
+        .attr("type","checkbox")
+        .attr("value",hero)
+        .on("change", function(){
+            /*Quando clicchi la prima volta pulisce il dominio precedente e lascia solo quello che desideri*/
+            if(this.checked){
+                /*Se è la prima volta che lo clicchi*/
+                if(firstSelectionHero){
+                    y_focus.domain([])
+                    firstSelectionHero= false
+                }
+                 temp = y_focus.domain()
+                 temp.push(this.value)
+                 temp = sortArrayAsAnother(temp,hlist)
+                 y_focus.domain(temp)
+
+                 d3.select(".y.focus")
+                   .transition()
+                   .duration(updateTime)
+                   .call(yAxis_focus)
+
+                drawIcon(y_focus.domain())
+                updateEventFocusWithFilter()
+                }
+            else{
+                val = String(this.value)
+                temp = y_focus.domain()
+                temp = temp.filter(function(hero){
+                    return !(hero == val)
+                })
+
+                if(temp.length == 0){
+                    firstSelectionHero = true
+                    /*DA GESTIRE IL CASO IN CUI SVUOTO IL FILTRO*/
+                    var yd = updateFocusY(x_focus.domain())
+                    drawIcon(yd)
+                    d3.select(".y.focus")
+                        .transition()
+                        .duration(updateTime)
+                        .call(yAxis_focus)
+                    updateEventFocus();
+                }
+
+                else{
+                    y_focus.domain(temp)
+                    d3.select(".y.focus")
+                    .transition()
+                    .duration(updateTime)
+                    .call(yAxis_focus)
+                    drawIcon(y_focus.domain())
+                    updateEventFocusWithFilter()
+                }
+
+             }
+              })
+
+        elem.append("label")
+              .attr("for",id)
+              .text(hero)
+              
+    })
+
+    mlist.forEach(function(movie){
+        elem = filterPageSelectionMovieList.append("li")
+        id = movie+"_movie_checkbox"
+        elem.append("input")
+        .attr("id",id)
+        .attr("class", "checkbox")
+        .attr("type","checkbox")
+        .attr("value",movie)
+        .on("change", function(){
+            if(this.checked){
+                if(firstSelectionMovie){
+                    domainBeforeFilter = x_focus.domain()
+                    x_focus.domain([])
+                    firstSelectionMovie = false
+                }
+
+                 temp = x_focus.domain()
+                 temp.push(this.value)
+                 temp = sortArrayAsAnother(temp,mlist)
+                 x_focus.domain(temp)
+                 d3.select(".x.focus")
+                   .transition()
+                   .duration(updateTime)
+                   .call(xAxis_focus)
+
+                 updateEventFocusWithFilter()
+                 tickFocusResize();
+                 createFilmArea();
+
+                 }
+            else{
+                val = String(this.value)
+                temp = x_focus.domain()
+                temp = temp.filter(function(movie){
+                    return !(movie == val)
+                })
+                if(temp.length == 0){
+                    firstSelectionMovie = true
+                    /*DA GESTIRE IL CASO IN CUI SVUOTO IL FILTRO*/
+                    if(firstSelectionHero){
+                        var xd = updateFocusX(brushPos[0]+100,brushPos[1]+100)
+                        console.log(xd)
+                        var yd = updateFocusY(xd)
+                        drawIcon(yd)
+                        d3.select(".y.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(yAxis_focus)
+                        d3.select(".x.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(xAxis_focus)
+                        updateEventFocus();
+                    }
+                    else{
+                        updateFocusX(brushPos[0]+100,brushPos[1]+100)
+                        d3.select(".x.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(xAxis_focus)
+                        updateEventFocusWithFilter()
+                        tickFocusResize();
+                    }
+
+                }
+                createFilmArea();
+
+                }
+            })  
+
+        elem.append("label")
+              .attr("for",id)
+              .text(movie)
+              
+    })
+}
+
+
+
+
+
+
 d3.json("../data/MCU-heroToIcon.json")
     .then(function(data){
         heroToIcon = data;
@@ -388,9 +634,11 @@ d3.json("../data/MCU-heroToIcon.json")
                                         elist = data;
                                         createFocus();
                                         createBrush();
+                                        createFilterPage();
                                         createFilmArea();
                                         drawEventContext();
                                         updateEventFocus();
+                                        
                                     })
                                     .catch(function(error) {
                                         console.log(error); // Some error handling here

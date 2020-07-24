@@ -47,6 +47,7 @@ var context = svgBottom.append("g").attr("class","context").attr("viewbox",[0,0,
 
 //area di selezione sul context
 var brush = d3.brushX()
+var brushPos = [];
 
 //infobox dei film e degli eroi
 var infoBox = d3.select("body").append("div")
@@ -71,5 +72,15 @@ var dimBaloon = {width : xL/3 , height : yL * 0.6, margin : 5}
 d3.select(".filter")
     .style("width",window.innerWidth-width+100)
     .style("height",height*0.34)
-    //.style("background-color","red")
+    .style("display","flex")
     .style("float","left")
+
+
+var firstSelectionHero = true
+var firstSelectionMovie = true
+var filterPagePosition = window.innerWidth - 550
+
+var filterPageHero = d3.select(".filter").append("div")
+    .attr("class","filter-box-hero")
+var filterPageMovie = d3.select(".filter").append("div")
+    .attr("class","filter-box-movie")

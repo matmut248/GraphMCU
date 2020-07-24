@@ -106,3 +106,25 @@ body{
     stroke-linejoin: bevel;
 }
 
+.filter-box-movie,.filter-box-hero{
+    overflow-y: scroll;
+    width: 49%;
+    height: 100%;
+    font-family: cursive;
+}
+
+.filter-box-movie h3, .filter-box-hero h3{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 12px;
+    text-align: start;
+    margin: 5px 0px;
+    padding-left: 5px;
+}
+li{
+    padding-left: 0 px;
+}
+

@@ -72,3 +72,22 @@ function wrapEv(text, width) {
         }
     });
 }
+
+function sortArrayAsAnother(list,ordered){
+    tmp = []
+    list.forEach(function(elem){
+        index = ordered.indexOf(elem)
+        tmp.push({"x" : elem, "y" : index })
+    })
+
+    tmp.sort(function(elem1,elem2){
+        return elem1.y - elem2.y
+    })
+    
+    newArray = []
+    tmp.forEach(function(elem){
+        newArray.push(elem.x)  
+    })
+
+    return newArray
+}
