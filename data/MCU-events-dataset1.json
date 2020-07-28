@@ -1,4 +1,4 @@
-{
+
 	"Captain America: The First Avenger" : {
 		"events": [
 			["Steve Rogers, respinto dal reclutamento della Seconda Guerra Mondiale a causa della sua bassa statura e problemi di salute, partecipa a una mostra di tecnologie future con l'amico James Bucky Barnes dove incontra il Dr. Abraham Erskine, che consente l'arruolamento militare di Rogers.","Captain America"],
@@ -38,13 +38,13 @@
 	},
 	"Iron Man 2" : {
 		"events": [
-			["In punto di morte Vanko consegna a suo figlio, Ivan, il progetto del Reattore Arc, che egli stesso aveva inventato insieme a Howard Stark. Ivan inizia dunque a costruire un reattore molto simile a quello di Tony Stark e pianifica la sua vendetta nei confronti dell'inventore. ","Iron Man"],
-			["Tony si reca a Montecarlo e prende parte ad una corsa automobilistica. La corsa viene però interrotta da Ivan Vanko: vestito da steward, Vanko entra nel tracciato e colpisce le vetture in transito, compresa quella di Tony, con delle potenti fruste elettriche alimentate dal Reattore Arc che aveva costruito. Tony combatte contro Vanko, riuscendo a renderlo inoffensivo e a farlo arrestare. ","Iron Man"],
-			["Il sangue di Tony è sempre più inquinato e, in occasione di quella che potrebbe essere la sua ultima festa di compleanno, l'inventore si mostra in pubblico ubriaco e con indosso la propria armatura. Il suo migliore amico, James Rhodes, si infuria per il comportamento sconsiderato di Tony: indossata un'altra delle sue armature, il Mark II, Rhodey combatte contro Tony, per poi fuggire e consegnare la corazza all'esercito. ","War Machine"],
-			[" Fury fornisce a Tony i vecchi appunti e alcuni filmati di Howard Stark. Tony si riconcilia con il padre e dagli indizi lasciati dall'uomo scopre un nuovo elemento, che potrebbe alimentare il Reattore Arc al posto del palladio. L'inventore costruisce un acceleratore di particelle e sintetizza con successo l'elemento; inseritolo nel proprio torace, il nuovo elemento ripulisce completamente il suo sangue e gli salva la vita. ","Iron Man"],
-			["Tony riceve una chiamata da Ivan Vanko, che dallo stabilimento delle Hammer Industries minaccia l'inventore promettendogli vendetta. Tony assembla così la sua nuova armatura, il Mark VI, e vola alla Stark Expo, dove Hammer sta presentando i suoi innovativi droni da combattimento, ","Iron Man"],
-			["Tony insieme a Rhodey viene raggiunto da Vanko che, dotato di un'armatura completa e armata con due fruste elettriche, affronta i due mettendoli in seria difficoltà. Unendo le forze, riescono tuttavia a sconfiggere Vanko, il quale prima di morire fa esplodere l'intera area della Stark Expo; Tony salva appena in tempo Pepper, con la quale scambia un bacio.","Iron Man"],
-			["Fury comunica a Tony che al momento Iron Man viene ritenuto inadeguato per l'iniziativa Vendicatori, il progetto curato dallo S.H.I.E.L.D. di mettere insieme un gruppo di supereroi, ma che l'inventore potrebbe comunque fare da consulente.","Nick Fury"]
+		["In punto di morte Vanko consegna a suo figlio, Ivan, il progetto del Reattore Arc, che egli stesso aveva inventato insieme a Howard Stark. Ivan inizia dunque a costruire un reattore molto simile a quello di Tony Stark e pianifica la sua vendetta nei confronti dell'inventore. ","null"],
+		["Tony si reca a Montecarlo e prende parte ad una corsa automobilistica. La corsa viene però interrotta da Ivan Vanko: vestito da steward, Vanko entra nel tracciato e colpisce le vetture in transito, compresa quella di Tony, con delle potenti fruste elettriche alimentate dal Reattore Arc che aveva costruito. Tony combatte contro Vanko, riuscendo a renderlo inoffensivo e a farlo arrestare. ","Iron Man"],
+		["Il sangue di Tony è sempre più inquinato e, in occasione di quella che potrebbe essere la sua ultima festa di compleanno, l'inventore si mostra in pubblico ubriaco e con indosso la propria armatura. Il suo migliore amico, James Rhodes, si infuria per il comportamento sconsiderato di Tony: indossata un'altra delle sue armature, il Mark II, Rhodey combatte contro Tony, per poi fuggire e consegnare la corazza all'esercito. ","War Machine"],
+		[" Fury fornisce a Tony i vecchi appunti e alcuni filmati di Howard Stark. Tony si riconcilia con il padre e dagli indizi lasciati dall'uomo scopre un nuovo elemento, che potrebbe alimentare il Reattore Arc al posto del palladio. L'inventore costruisce un acceleratore di particelle e sintetizza con successo l'elemento; inseritolo nel proprio torace, il nuovo elemento ripulisce completamente il suo sangue e gli salva la vita. ","Iron Man"],
+		["Tony riceve una chiamata da Ivan Vanko, che dallo stabilimento delle Hammer Industries minaccia l'inventore promettendogli vendetta. Tony assembla così la sua nuova armatura, il Mark VI, e vola alla Stark Expo, dove Hammer sta presentando i suoi innovativi droni da combattimento, ","Iron Man"],
+		["Tony insieme a Rhodey viene raggiunto da Vanko che, dotato di un'armatura completa e armata con due fruste elettriche, affronta i due mettendoli in seria difficoltà. Unendo le forze, riescono tuttavia a sconfiggere Vanko, il quale prima di morire fa esplodere l'intera area della Stark Expo; Tony salva appena in tempo Pepper, con la quale scambia un bacio.","Iron Man"],
+		["Fury comunica a Tony che al momento Iron Man viene ritenuto inadeguato per l'iniziativa Vendicatori, il progetto curato dallo S.H.I.E.L.D. di mettere insieme un gruppo di supereroi, ma che l'inventore potrebbe comunque fare da consulente.","Nick Fury"]
 		],
 		"heroes" :  ["Nick Fury","Iron Man","War Machine","Black Widow"]
 	},
@@ -103,9 +103,9 @@
 	},
 	"Thor" : {
 		"events": [
-		["Dopo aver vinto la guerra tra gli Asgardiani e il mondo di Jotunheim, pianeta abitato dai Giganti di Ghiaccio, Odino costrinse alla resa e ad una tregua il loro re, Laufey, privandolo sia dello Scrigno degli Antichi Inverni, fonte del suo immenso potere, sia di suo figlio, il neonato Loki che poi Odino adottò come figlio proprio, nella speranza di riuscire un giorno a porre fine all'ostilità tra le due razze, attraverso di lui. ","Odin"],
+		["Dopo aver vinto la guerra tra gli Asgardiani e il mondo di Jotunheim, pianeta abitato dai Giganti di Ghiaccio, Odino costrinse alla resa e ad una tregua il loro re, Laufey, privandolo sia dello Scrigno degli Antichi Inverni, fonte del suo immenso potere, sia di suo figlio, il neonato Loki che poi Odino adottò come figlio proprio, nella speranza di riuscire un giorno a porre fine all'ostilità tra le due razze, attraverso di lui. ","Odino"],
 		["Un millennio dopo, alcuni Giganti di Ghiaccio riescono ad introdursi ad Asgard superando la vigilanza di Heimdall, potentissimo guardiano del Bifrost; quindi tentano di recuperare lo Scrigno degli Antichi Inverni, ma vengono eliminati dal Distruttore, il guardiano di quello e di altri potenti dispositivi; la loro azione però fa interrompere la cerimonia d'incoronazione a re di Asgard di Thor, il quale vuole vendetta e si reca a Jotunheim contro la volontà del padre.","Thor"],
-		["Irritato dal comportamento immaturo e irresponsabile del figlio, Odino decide di punire Thor, e di bandirlo dal regno di Asgard, abbandonandolo su Midgard spogliandolo della potenza di cui è dotato; Thor si ritrova in Nuovo Messico dove viene soccorso dagli astrofisici Jane Foster ed Erik Selvig. ","Odin"],
+		["Irritato dal comportamento immaturo e irresponsabile del figlio, Odino decide di punire Thor, e di bandirlo dal regno di Asgard, abbandonandolo su Midgard spogliandolo della potenza di cui è dotato; Thor si ritrova in Nuovo Messico dove viene soccorso dagli astrofisici Jane Foster ed Erik Selvig. ","Odino"],
 		["Venuto a sapere della presenza del martello, Thor s'introduce nella base mobile, dove ingaggia una lotta con gli agenti dello S.H.I.E.L.D.. Prova quindi ad estrarre il martello dal cratere dove è conficcato, ma senza successo, poiché l'artefatto non lo ritiene ancora degno; viene così preso e bloccato. ","Thor"],
 		["Loki scopre la sua vera origine e ha una forte discussione con Odino il quale cade nel Sonno di Odino, sonno rigenerante.","Loki"],
 		["Loki, assume il potere di reggente di Asgard. Subito si rammarica coi sostenitori di Thor di non poter sollevare il fratello dall'esilio, impostogli da loro padre. Quindi, sceso sulla Terra, Loki mente a Thor, spiegando che Odino è morto, che lui è il nuovo re di Asgard","Loki"],
@@ -117,15 +117,15 @@
 		["Durante la distruzione del ponte, i due fratelli lottano di nuovo, finché cadono nel vuoto, ma vengono salvati da Odino. Loki tenta di nuovo di spiegare le sue ragioni al padre, il quale, però, non giustifica il suo piano; sentendosi tradito e di nuovo incompreso, Loki si lascia perciò cadere nel vuoto cosmico, apparentemente suicidandosi. ","Loki"],
 		["Alla fine, Erik Selvig viene contattato da Nick Fury, direttore dello S.H.I.E.L.D., il quale gli mostra il Tesseract, una fonte di energia che può donare poteri illimitati. Il dottor Selvig, che in realtà risulta essere sotto l'influsso di Loki, che quindi ha simulato il suo suicidio, accetta di studiare l'oggetto. ","Nick Fury"]
 		],
-		"heroes" : ["Thor","Loki","Hawkeye","Odin","Nick Fury"]
+		"heroes" : ["Thor","Loki","Hawkeye","Odino","Nick Fury"]
 	},
 	"Guardians of the Galaxy" : {
 		"events": [],
-		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora"]
+		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer"]
 	},
 	"Guardians of the Galaxy Vol. 2" : {
 		"events": [],
-		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora","Mantis"]
+		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
 	"Doctor Strange" : {
 		"events": [
@@ -141,11 +141,11 @@
 		["Il capitano si incontra con Natasha; grazie ai dati della chiave USB i due scoprono un bunker segreto dello S.H.I.E.L.D.  la base militare dove Rogers era stato addestrato durante la seconda guerra mondiale; là attivano un supercomputer contenente la coscienza di Arnim Zola, il quale rivela loro che sin dalla fondazione dello S.H.I.E.L.D., l'HYDRA si è segretamente infiltrata nell'organizzazione,","Captain America"],
 		["Il capitano insieme a Romanoff e Falcon interroga l'agente Jasper Sitwell, in realtà membro dell'HYDRA, il quale rivela loro che Zola ha sviluppato un algoritmo capace di identificare gli individui che potrebbero in futuro opporsi ai piani dell'HYDRA. Grazie ai nuovi Helicarrier sarà possibile eliminare preventivamente questi individui con facilità","Captain America"],
 		["Intanto Fury, che aveva finto la sua morte, sta pianificando una missione per sabotare gli Helicarrier sostituendo i loro chip di controllo.","Nick Fury"],
-		["Rogers comunica all'intera base S.H.I.E.L.D. il vero piano dell'HYDRA e dopo una breve lotta Fury spara a Pierce, uccidendolo","Nick Fury"],
+		["Rogers comunica all'intera base S.H.I.E.L.D. il vero piano dell'HYDRA e dopo una breve lotta Fury spara a Pierce, uccidendolo","NIck Fury"],
 		[" Rogers aiutato da Wilson attacca gli Helicarrier e riesce a sostituire due dei tre chip, ma il Soldato d'Inverno distrugge l'armatura di Wilson e raggiunge Rogers sull'ultimo Helicarrier. Durante la lotta Rogers cerca di far tornare la memoria a Bucky e riesce a sostituire l'ultimo chip, distruggendo gli Helicarrier. ","Captain America"],
-		["POST CREDIT: alcuni scienziati studiano lo scettro di Loki e due prigionieri: uno è in grado di muoversi ad una velocità incredibile, mentre l'altra possiede poteri telecinetici.","Scarlet Witch"]
+		["POST CREDIT: alcuni scienziati studiano lo scettro di Loki e due prigionieri: uno è in grado di muoversi ad una velocità incredibile, mentre l'altra possiede poteri telecinetici.","null"]
 		],
-		"heroes" : ["Captain America","Winter Soldier","Nick Fury", "Black Widow","Falcon","Scarlet Witch"]
+		"heroes" : ["Captain America","Winter Soldier","Nick Fury", "Black Widow","Falcon"]
 	},
 	"Captain America: Civil War":{
 		"events": [
@@ -169,13 +169,13 @@
 		"events":[
 		 ["Nick Fury mette invia gli agenti Coulson e Romanoff a localizzare un gruppo di persone già note alle cartelle dello S.H.I.E.L.D., con l'intento di creare una squadra d'azione speciale. Il progetto è chiamato Vendicatori.","Nick Fury"],
 		 ["Loki manifesta le sue intenzioni: vuole iniziare una guerra. Usando il Tesseract, rubato a Nick Fury, apre un portale spaziale da cui escono i Chitauri, che assaltano l'isola di Manhattan ","Loki"],
-		 ["Tutti i vendicatori, capitanati da Rogers, affluiscono sull'isola di Manhattan per combattere i Chitauri. E' guerra.","Captain America"],
+		 ["Tutti i vendicatori affluiscono sull'isola di Manhattan per combattere i Chitauri. E' guerra.","Vendicatori"],
 		 ["Il consiglio ha deciso di inviare un missile nucleare per distruggere i nemici insieme alla popolazione residente: Iron Man, in un atto di estremo sacrificio, usa tutte le forze per deviare il missile verso il portale e lo attraversa, colpendo la nave madre dei Chitauri. ","Iron Man"],
 		 ["Cessata la minaccia, Thor torna ad Asgard con il Tesseract e Loki prigioniero. ","Thor"],
-		 ["POST CREDIT: The Other parla del fallito attacco alla Terra con il suo misterioso padrone, che si rivela essere Thanos sostenendo che sfidare gli umani sarebbe come lusingare la Morte.","Thanos"]
+		 ["POST CREDIT: The Other parla del fallito attacco alla Terra con il suo misterioso padrone, che si rivela essere Thanos sostenendo che sfidare gli umani sarebbe come lusingare la Morte.","null"]
 		 
 		 ],
-		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Loki","War Machine", "Nick Fury","Hawkeye","Hulk","Thanos"]
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Loki","War Machine", "Nick Fury","Hawkeye","Hulk"]
 	},
 	"Avengers: Infinity War":{
 		"events": [
@@ -185,44 +185,44 @@
 		["Thanos e Gamora giungono così su Vormir, su cui si trova la Gemma dell'anima, dove li accoglie Teschio Rosso, ritrovatosi lì dopo lo scontro con Capitan America, il quale racconta di essere diventato il custode della Gemma, e rivela a Thanos che per ottenerla dovrà sacrificare l'anima di una persona amata; il titano, con le lacrime agli occhi, decide così di uccidere sua figlia Gamora. ","Thanos"],
 		["Iron Man insieme a Spider Man e Doctor Strange raggiungono Titano, il pianeta natale di Thanos, dove ad accoglierli trovano parte dei Guardiani della Galassia, con cui stabiliscono un'alleanza contro il titano.","Iron Man"],
 		["Nel frattempo su Nidavellir Thor incontra Eitri, l'unico dei Nani rimasto in vita dopo il passaggio di Thanos, che li ha costretti a forgiare il Guanto dell'Infinito per poi spegnere la stella che alimenta la loro fucina, uccidendo tutti. Thor e Rocket riescono ad accendere nuovamente la stella permettendo a Eitri di forgiare una nuova arma: l'ascia Stormbreaker.","Thor"],
-		["Su Titano giunge Thanos che viene messo in difficoltà grazie alla collaborazione di tutti gli eroi.  Thanos, affronta Iron Man e lo colpisce gravemente: a questo punto Strange offre al titano la Gemma del Tempo in cambio della vita di Tony, sicuro di ciò che aveva visto durante la sua meditazione. ","Doctor Strange"],
-		["Durante il combattimento tra i Vendicatori e Thanos, Wanda è costretta a distruggere la Gemma della Mente, consapevole che così ucciderà anche Visione, mentre gli altri Avengers tentano di rallentare invano Thanos, il quale, usando la Gemma del Tempo, ricompone Visione e lo uccide per la seconda volta, ottenendo così anche l'ultima delle Gemme dell'Infinito","Scarlet Witch"],
+		["Su Titano giunge Thanos che viene messo in difficoltà grazie alla collaborazione di tutti gli eroi.  Thanos, affronta Iron Man e lo colpisce gravemente: a questo punto Strange offre al titano la Gemma del Tempo in cambio della vita di Tony, sicuro di ciò che aveva visto durante la sua meditazione. ","Vendicatori"],
+		["Durante il combattimento tra i Vendicatori e Thanos, Wanda è costretta a distruggere la Gemma della Mente, consapevole che così ucciderà anche Visione, mentre gli altri Avengers tentano di rallentare invano Thanos, il quale, usando la Gemma del Tempo, ricompone Visione e lo uccide per la seconda volta, ottenendo così anche l'ultima delle Gemme dell'Infinito","Vendicatori"],
 		[" Il titano schiocca le dita ritrovandosi in un mondo deserto dove trova una piccola Gamora: quando questa gli chiede se fosse riuscito a realizzare il suo piano risponde di sì, ma anche che nel farlo ha perso tutto; ","Thanos"],
-		["POST CREDIT: Nick Fury inizia a notare gli effetti dell'azione di Thanos, di cui lui stesso è vittima. Poco prima di scomparire, Fury riesce a inviare una richiesta d'aiuto a Captain Marvel. ","Nick Fury"]
+		["POST CREDIT: Nick Fury inizia a notare gli effetti dell'azione di Thanos, di cui lui stesso è vittima. Poco prima di scomparire, Fury riesce a inviare una richiesta d'aiuto a Capitan Marvel. ","Nick Fury"]
 			],
 		
 		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Hulk","Doctor Strange","Spider Man",
-					"Loki","War Machine", "Nick Fury","Hawkeye", "Thanos","Scarlet Witch","Captain Marvel","Ant-Man","Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora","Mantis"]
+					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Capitan Marvel","Ant-Man","Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
 	"Avengers: Age of Ultron":{
 		"events": [
-		["A Sokovia, un paese dell'Europa orientale, gli Avengers attaccano una base dell'HYDRA comandata dallo spietato Barone Strucker, il quale sta effettuando degli esperimenti sugli esseri umani utilizzando lo scettro di Loki. Il gruppo si scontra con due gemelli potenziati dagli esperimenti di Strucker. Dopo un duro scontro gli Avengers riescono a catturare Strucker e recuperare lo scettro","Quicksilver"],
+		["A Sokovia, un paese dell'Europa orientale, gli Avengers attaccano una base dell'HYDRA comandata dallo spietato Barone Strucker, il quale sta effettuando degli esperimenti sugli esseri umani utilizzando lo scettro di Loki. Il gruppo si scontra con due gemelli potenziati dagli esperimenti di Strucker. Dopo un duro scontro gli Avengers riescono a catturare Strucker e recuperare lo scettro","Vendicatori"],
 		["Gli Avengers scoprono che all'interno della gemma dello scettro c'è un'intelligenza artificiale e in segreto la usano per completare il programma di difesa globale 'Ultron'. Durante la festa organizzata per festeggiare la vittoria, Ultron si attiva, distrugge J.A.R.V.I.S., l'intelligenza artificiale di Stark, e attacca la squadra. Ultron fugge poi con lo scettro di Loki","Ultron"],
-		["Con Ultron presente in tutti i sistemi informatici del mondo e ancora scossi dalle visioni causate da Wanda, gli Avengers si rifugiano alla fattoria di Barton. Thor tuttavia decide di andarsene e di consultarsi con il dr. Erik Selvig sul significato della visione apocalittica.","Thor"],
+		["Con Ultron presente in tutti i sistemi informatici del mondo e ancora scossi dalle visioni causate da Wanda, gli Avengers si rifugiano alla fattoria di Barton. Thor tuttavia decide di andarsene e di consultarsi con il dr. Erik Selvig sul significato della visione apocalittica.","Vendicatori"],
 		[" Ultron, si è recato a Seul dalla dottoressa Helen Cho, alleata degli Avengers, e l'ha costretta a usare il tessuto sintetico da lei ideato, insieme alla gemma dello scettro, per creare il corpo perfetto.","Ultron"],
 		["Captain America insieme alla Vedoova Nera e Occhio di Falco arrivano a Seul per cercare Ultron: i tre riescono a recuperare il corpo sintetico, ma Ultron cattura Romanoff e fugge. ","Captain America"],
 		["Gli Avengers si recano a Sokovia, dove Ultron ha usato il vibranio per costruire una macchina in grado di sollevare la città nel cielo e farla schiantare al suolo, generando così un impatto talmente potente da causare l'estinzione totale della vita.","Ultron"],
 		["La città comincia a precipitare, ma Iron Man con l'aiuto di Thor riescono a sovraccaricare la macchina e a far esplodere la città in volo. ","Iron Man"],
 		["POST CREDIT:  Thanos, insoddisfatto del fallimento delle sue pedine, indossa il Guanto dell'Infinito e afferma che recupererà le Gemme di persona. ","Thanos"]
 		],
-		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Ant-Man","Doctor Strange",
-					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Quicksilver","Thanos","Falcon","Ultron","Vision"]
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Ant-Man","Dottor Strange",
+					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch","Falcon","Vision"]
 	},
 	"Avengers: Endgame":{
 		"events": [
-		["Captain Marvel propone di uccidere Thanos, e gli altri Vendicatori decidono di aiutarla, speranzosi di rubare le Gemme e utilizzarle per riportare tutti in vita. La missione si rivela infruttuosa: un assai indebolito Thanos, infatti, spiega di aver distrutto le Gemme sfruttando il loro stesso potere, Thor furioso lo decapita.","Captain Marvel"],
+		["Capitan Marvel propone di uccidere Thanos, e gli altri Vendicatori decidono di aiutarla, speranzosi di rubare le Gemme e utilizzarle per riportare tutti in vita. La missione si rivela infruttuosa: un assai indebolito Thanos, infatti, spiega di aver distrutto le Gemme sfruttando il loro stesso potere, Thor furioso lo decapita.","Capitan Marvel"],
 		["Ant-Man sostiene che sarebbe possibile sfruttare il regno quantico per viaggiare nel tempo e rimediare a ciò che ha fatto da Thanos","Ant-Man"],
 		["I primi tentativi dell'esperimento si rivelano fallimentari, finché al Quartier Generale non arriva Stark, che ha sviluppato un bracciale GPS che può aiutare a viaggiare nel regno quantico. Grazie al lavoro di Tony Stark aiutato da Bruce Banner, la prima prova di viaggio nel tempo va a buon fine e quindi resta da stabilire dove e in quale tempo dirigersi per recuperare le Gemme. ","Iron Man"],
 		["Banner cerca la Gemma del Tempo incontrando l'Antico che, inizialmente riluttante, accetta di prestargliela dopo aver saputo che Strange l'ha volutamente consegnata a Thanos.","Hulk"],
 		["Capitan America riesce a recuperare la Gemma della Mente e successivamente insieme a Stark si spostano nel 1970 per recuperare il Tesseract oltre che nuove particelle Pym, necessarie per continuare a viaggiare nel tempo, dalla base dello S.H.I.E.L.D..","Captain America"],
-		["Romanoff e Clint si recano su Vormir a prendere la Gemma dell'Anima, ma Teschio Rosso li avverte che uno dei due dovrà sacrificarsi. I due si scontrano, in quanto ognuno dei due vuole immolarsi per salvare l'altro, ma alla fine è Natasha a morire, e Clint viene in possesso della Gemma","Hawkeye"],
+		["Romanoff e Clint si recano su Vormir a prendere la Gemma dell'Anima, ma Teschio Rosso li avverte che uno dei due dovrà sacrificarsi. I due si scontrano, in quanto ognuno dei due vuole immolarsi per salvare l'altro, ma alla fine è Natasha a morire, e Clint viene in possesso della Gemma","Vedova Nera"],
 		["Quando tutti tornano alla loro epoca con le Gemme dell'Infinito, Bruce Banner, l'unico in grado di sopportare le radiazioni emesse dalle Gemme quando utilizzate, indossa un nuovo Guanto e riporta tutti in vita,","Hulk"],
-		["la Nebula del passato fa materializzare nel presente l'astronave di Thanos che ha portato con se un enorme esercito. Doctor Strange apre portali temporali fa arrivare tutti sul campo di battaglia in aiuto dei vendicatori","Doctor Strange"],
+		["la Nebula del passato fa materializzare nel presente l'astronave di Thanos che ha portato con se un enorme esercito. Dottor Strange apre portali temporali fa arrivare tutti sul campo di battaglia in aiuto dei vendicatori","Dottor Strange"],
 		[" Iron Man si sacrifica attaccando Thanos, rubando le Gemme dal Guanto e schioccando le dita in un guanto autocostruito per far dissolvere l'esercito del Titano; Thanos, infine, si siede contemplando la sua disfatta, per poi dissolversi. Le radiazioni emesse dal guanto non sono però sopportabili da un essere umano, e Stark muore ","Iron Man"]
 		],
-		"heroes" : ["Captain America","Iron Man","Black Widow","Hulk","Thor","Captain Marvel","Ant-Man","Doctor Strange",
+		"heroes" : ["Captain America","Iron Man",  "Black Widow", "Thor","Capitan Marvel","Ant-Man","Dottor Strange",
 					"Loki","War Machine", "Nick Fury","Hawkeye", "War Machine","Scarlet Witch",
-					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora","Mantis"]
+					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora", "Drax the Destroyer","Mantis"]
 	},
 	"Ant-Man":{
 		"events": [],

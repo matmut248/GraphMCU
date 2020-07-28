@@ -236,7 +236,7 @@ function drawIcon(newdom){
             if(newdom.length == 1){var val = yL/2 - 37}
             if(newdom.length > 1){var val = yL - (deltaL*h) -48}
             if(newdom.length>=9){var val = yL - (deltaL*h) -43}
-            if(newdom.length>=13){var val = yL - (deltaL*h) - 37}
+            if(newdom.length>=14){var val = yL - (deltaL*h) - 37}
             node.setAttribute("y", val)
         }
         for (var h in newdom){
@@ -268,8 +268,7 @@ function popOutMenu(value,type){
     }
     if(type == "hero"){
         var img = heroToIcon[value];
-        var descr = "Iron Man è il migliore di tutti e salverà il mondo dai pagliacci come simone"//heroDescr[hero];
-        infoBox.style("overflow-y","hidden")
+        var descr = heroData[value];
         infoBox.style("border-color",heroToColor[value])
         infoBox.append("div").transition().delay(500)
             .attr("class","name")
@@ -279,7 +278,8 @@ function popOutMenu(value,type){
             .attr("class","poster")
             .attr("src","../hero_icon/"+img);
         infoBox.append("div").transition().delay(500)
-            .attr("class","description")
+            .style("font-size","14px")
+            .style("font-family","cursive")
             .text(descr);
         isVisible = true;
     }
@@ -291,12 +291,41 @@ function popOutMenu(value,type){
         }
         infoBox.style("overflow-y","scroll")
         infoBox.append("div").transition().delay(500).attr("class","name").text(value);
+
         infoBox.append("div").append("img").transition().delay(500)
+            .style("padding-top","10px")
             .attr("width",200)
             .attr("src","../movie_poster/"+obj["movie_poster"]);
+
         infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
             .attr("font-size","12px")
             .text(obj["description"]);
+
+        infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
+            .attr("font-size","12px")
+            .text("Data di uscita : "+ obj["released"]);
+
+        infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
+            .attr("font-size","12px")
+            .text("Regista : "+ obj["director"]);
+
+        infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
+            .attr("font-size","12px")
+            .text("Budget : "+ obj["budget"]);
+
+        infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
+            .attr("font-size","12px")
+            .text("Box Office : "+ obj["box_office"]);
+
+        infoBox.append("div").transition().delay(550)
+            .style("padding-top","10px")
+            .attr("font-size","12px")
+            .text("Post Credit : "+ obj["post_credit"]);
         isVisible = true;
     }
     
@@ -320,7 +349,12 @@ function updateEventFocus(){
                     .attr("class","focus event")
                     .attr('cx', x_focus(film)+delta*j + 130)
                     .attr('cy', y_focus(hero))
-                    .attr('r', 12)
+                    .attr('r', function(){
+                        if(y_focus.domain().length <= 9){return 12}
+                        if(y_focus.domain().length <= 14){return 10}
+                        if(y_focus.domain().length <= 20){return 8}
+                        else {return 6}
+                    })
                     .attr('fill', function(d) {return heroToColor[hero]})
                     .attr("eventDetail",e[j][0])
                     .style("opacity","0")
@@ -385,9 +419,6 @@ function popUpEvent(x,y,e){
 
 }
 
-
-
-
 function numberoFilmInBrush(init, last){
     var initValue = 0, lastValue = 0;
     var deltaX = x.bandwidth()/2;
@@ -409,7 +440,7 @@ function numberoFilmInBrush(init, last){
     if(newDomain[newDomain.length-1] != "Spider-Man: Far From Home"){
         newDomain.pop()
     }
-    return newDomain.length+2
+    return newDomain.length
 }
 
 function updateEventFocusWithFilter(){
@@ -451,19 +482,19 @@ function updateEventFocusWithFilter(){
 function createFilterPage(){
 
     var filterPageSelectionHeroList = d3.select(".filter-box-hero")
-                                    .append("h3")
-                                    .text("Seleziona l'eroe")
-                                    .append("ul")
+    filterPageSelectionHeroList.append("h3")
+        .text("Seleziona l'eroe")
+    filterPageSelectionHeroList.append("ul")
 
     var filterPageSelectionMovieList = d3.select(".filter-box-movie")
-                                    .append("h3")
-                                    .text("Seleziona il film")
-                                    .append("ul")
+    filterPageSelectionMovieList.append("h3")
+        .text("Seleziona il film")
+    filterPageSelectionMovieList.append("ul")
 
     var domainBeforeFilter = [];
    
     hlist.forEach(function(hero){
-        elem = filterPageSelectionHeroList.append("li")
+        elem = filterPageSelectionHeroList.select("ul").append("li")
         id = hero + "_hero_checkbox"
         elem.append("input")
         .attr("id",id)
@@ -500,14 +531,30 @@ function createFilterPage(){
 
                 if(temp.length == 0){
                     firstSelectionHero = true
-                    /*DA GESTIRE IL CASO IN CUI SVUOTO IL FILTRO*/
-                    var yd = updateFocusY(x_focus.domain())
-                    drawIcon(yd)
-                    d3.select(".y.focus")
-                        .transition()
-                        .duration(updateTime)
-                        .call(yAxis_focus)
-                    updateEventFocus();
+                    if(firstSelectionMovie){
+                        var xd = updateFocusX(brushPos[0]+100,brushPos[1]+100)
+                        var yd = updateFocusY(xd)
+                        drawIcon(yd)
+                        d3.select(".y.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(yAxis_focus)
+                        d3.select(".x.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(xAxis_focus)
+                        updateEventFocus(); 
+                    }
+                    else{
+                        /*DA GESTIRE IL CASO IN CUI SVUOTO IL FILTRO*/
+                        var yd = updateFocusY(x_focus.domain())
+                        drawIcon(yd)
+                        d3.select(".y.focus")
+                            .transition()
+                            .duration(updateTime)
+                            .call(yAxis_focus)
+                        updateEventFocus();
+                    }
                 }
 
                 else{
@@ -530,7 +577,7 @@ function createFilterPage(){
     })
 
     mlist.forEach(function(movie){
-        elem = filterPageSelectionMovieList.append("li")
+        elem = filterPageSelectionMovieList.select("ul").append("li")
         id = movie+"_movie_checkbox"
         elem.append("input")
         .attr("id",id)
@@ -594,6 +641,21 @@ function createFilterPage(){
                     }
 
                 }
+                else{
+                    x_focus.domain(temp)
+                    d3.select(".x.focus")
+                        .transition()
+                        .duration(updateTime)
+                        .call(xAxis_focus)
+                    if(firstSelectionHero){
+                        updateEventFocus()
+                        tickFocusResize()
+                    }
+                    else{
+                        updateEventFocusWithFilter()
+                        tickFocusResize()
+                    }
+                }
                 createFilmArea();
 
                 }
@@ -605,11 +667,6 @@ function createFilterPage(){
               
     })
 }
-
-
-
-
-
 
 d3.json("../data/MCU-heroToIcon.json")
     .then(function(data){
@@ -659,7 +716,3 @@ d3.json("../data/MCU-heroToIcon.json")
     .catch(function(error) {
         console.log(error); // Some error handling here
     });
-
-
-
-
