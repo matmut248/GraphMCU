@@ -52,9 +52,9 @@ function createBrush(){
                 var selection = d3.event.selection;
                 var init = d3.event.selection[0]
                 var last = d3.event.selection[1]  
-               /* var d = resizeBrush(init,last)
+                var d = resizeBrush(init,last)
                 console.log(d)
-                d3.select(this).transition().duration(200).call(brush.move,d)*/
+                d3.select(this).transition().duration(200).call(brush.move,d)
             }
             createFilmArea();
             
@@ -79,8 +79,8 @@ function createBrush(){
 }
 
 function resizeBrush(){
-    var init = d3.event.selection[0] + 100
-    var last = d3.event.selection[1] + 100
+    var init = d3.event.selection[0]
+    var last = d3.event.selection[1]
     var b = x.bandwidth()
     var newinit = 0, newlast = 0;
     if (!d3.event.sourceEvent || !d3.event.selection) return;
@@ -111,7 +111,7 @@ function resizeBrush(){
     }
     console.log(init+"   "+last+"   ;   "+newinit+"   "+newlast+"  ;  "+b)
     if(init != newinit && last != newlast){
-        d3.select(".brush .selection").call(brush.move,defaultSelection)
+        d3.select(".brush .selection").call(brush.move,[newinit,newlast])
     }
     
 }
