@@ -24,7 +24,8 @@ function createBrush(){
         .on("brush",function(){
             var selection = d3.event.selection;
             var init = d3.event.selection[0]
-            var last = d3.event.selection[1]   
+            var last = d3.event.selection[1]
+            //resizeBrush(init,last)   
             brushPos = [init,last]         
             var newdomX = updateFocusX(init+100,last+100);
             var newdomY = updateFocusY(newdomX);
@@ -39,6 +40,7 @@ function createBrush(){
             firstSelectionHero = true
         })
         .on("end",function(){
+           // resizeBrush()
             if(!d3.event.selection){
                 d3.selectAll(".checkbox").property("checked", false)
                 firstSelectionMovie = true
@@ -50,13 +52,12 @@ function createBrush(){
                 var selection = d3.event.selection;
                 var init = d3.event.selection[0]
                 var last = d3.event.selection[1]  
-                if(numberoFilmInBrush(init, last) > 8){
-                    d3.select(".brush").transition().delay(100).duration(500).call(brush.move,defaultSelection)
-                    d3.selectAll(".checkbox").property("checked", false)
-                    firstSelectionMovie = true
-                    firstSelectionHero = true
-                }
+               /* var d = resizeBrush(init,last)
+                console.log(d)
+                d3.select(this).transition().duration(200).call(brush.move,d)*/
             }
+            createFilmArea();
+            
         })
         
     context.append("g")
@@ -75,6 +76,44 @@ function createBrush(){
         .attr("transform","translate("+ margin.innerLeft +",10)")
         .call(brush)
         .call(brush.move, defaultSelection);
+}
+
+function resizeBrush(){
+    var init = d3.event.selection[0] + 100
+    var last = d3.event.selection[1] + 100
+    var b = x.bandwidth()
+    var newinit = 0, newlast = 0;
+    if (!d3.event.sourceEvent || !d3.event.selection) return;
+    for(var i in mlist){
+        if(init >= b*i && init <= b*(i+1)){
+            if( (init-b*i) <= (init-b*(i+1)) ) {
+                newinit = b*i
+                break
+            }
+            else {
+                newinit = b*(i+1)
+                break
+            }
+        }
+    }
+
+    for(var j in mlist){
+        if(last >= b*j && last <= b*(j+1)){
+            if( (last-b*j) <= (last-b*(j+1)) ) {
+                newlast = b*j
+                break
+            }
+            else {
+                newlast = b*(j+1)
+                break
+            }
+        }
+    }
+    console.log(init+"   "+last+"   ;   "+newinit+"   "+newlast+"  ;  "+b)
+    if(init != newinit && last != newlast){
+        d3.select(".brush .selection").call(brush.move,defaultSelection)
+    }
+    
 }
 
 //funzione che modifica l'asse x del focus quando viene spostato il brush
@@ -468,8 +507,11 @@ function updateEventFocusWithFilter(){
                         var x = d3.event.srcElement.getAttribute("cx");
                         var y = d3.event.srcElement.getAttribute("cy");
                         var e = d3.event.srcElement.getAttribute("eventDetail");
-                        console.log(e)
-                        //popUpEvent(x,y,e);
+                        popUpEvent(parseFloat(x),parseFloat(y),e);
+                        
+                    })
+                   .on("mouseout",function(){
+                        d3.select("body").selectAll(".baloon").remove()//.transition().delay(updateTime/3)
                     });
                 }
                     
@@ -629,6 +671,7 @@ function createFilterPage(){
                             .duration(updateTime)
                             .call(xAxis_focus)
                         updateEventFocus();
+                        tickFocusResize();
                     }
                     else{
                         updateFocusX(brushPos[0]+100,brushPos[1]+100)
