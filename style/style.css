@@ -90,14 +90,15 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     box-sizing: content-box;
-    padding-top: 16px;
+    padding-top: 5px;
     
     
 }
 .baloon p{
-    padding-left: 25px;
+    padding-left: 20px;
     font-family: cursive;
     font-size: 15px;
+    max-width: 420px;
 }
 
 .prova { 

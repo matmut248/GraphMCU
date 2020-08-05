@@ -4,22 +4,23 @@
 			["Steve Rogers, respinto dal reclutamento della Seconda Guerra Mondiale a causa della sua bassa statura e problemi di salute, partecipa a una mostra di tecnologie future con l'amico James Bucky Barnes dove incontra il Dr. Abraham Erskine, che consente l'arruolamento militare di Rogers.","Captain America"],
 			["Sacrificando se stesso durante l'allenamento di base, Rogers dimostra il suo valore a Erskine, al colonnello Chester Phillips, all'agente britannico Peggy Carter e all'esperimento del super-soldato della Strategic Scientific Reserve","Captain America"],
 			["Il capo dei nazisti Johann Schmidt e lo scienziato Armin Zola sfruttano le energie del Tesseract per conquistare il mondo. Proprio mentre Rogers completa con successo il trattamento del super-soldato, un assassino mandato da Schmidt, uccide Erskine e fugge con l'ultimo siero del super-soldato","Captain America"],
-			["Schmidt abbandona il Terzo Reich e fonda l'HYDRA, Bucky e la sua unità combattono contro la nuova organizzazione nazista ma vengono catturati","Winter Soldier"],
+			["Schmidt abbandona il Terzo Reich e fonda l'HYDRA, un'organizzazione sempre di stampo nazista volta alla conquista del mondo. Bucky e la sua unità combattono contro la nuova organizzazione nazista ma vengono catturati","Winter Soldier"],
 			["Per salvare il suo amico, Rogers si arma di uno scudo di vibranio, il materiale più resistente del mondo, datogli da Howard Stark. Nello scontro con Schmidt si scopre che ha un teschio rosso perchè si è sottoposto ad esperimenti simili a quelli di Rogers","Captain America"],
-			["Per distruggere definitivamente l'HYDRA, Rogers recluta gli Howling Commandos, un team di 6 persone tra cui Barnes, il quale perde la vita cadendo da un treno","Winter Soldier"],
-			["Teschio rosso muore a causa del Tesseract, che verrà poi recuperato da Stark, ma Rogers precipita con l'aereo in un ghiacciaio","Captain America"],
-			["Rogers si sveglia nella moderna New York dopo essere stato ibernato per anni nel ghiacciaio","Captain America"],
+			["Per distruggere definitivamente l'HYDRA, Rogers recluta gli Howling Commandos, un team di 6 persone tra cui Barnes. il team prepara un agguato al treno che trasporta Zola, ma durante lo scontro Bucky perde la vita cadendo in un burrone","Winter Soldier"],
+			["Teschio rosso muore perchè prova a domare il potere del Tesseract, troppo grande per lui. il cubo di energia verrà poi recuperato da Stark, ma Rogers precipita con l'aereo in un ghiacciaio","Captain America"],
+			["Rogers si sveglia nella moderna New York dopo essere stato ibernato per anni nel ghiacciaio, è stato recuperato dallo SHIELD con lo scopo di arruolarlo ed usare la sua superforza per difendere il pianeta","Captain America"],
 			["POST CREDIT: Nick fury, capo dell'agenzia segreta chiamata SHIELD, porta a Steve Rogers un incarico, è la nascita del primo avenger","Nick Fury"]
 		],
 		"heroes" : ["Captain America","Winter Soldier","Nick Fury"]
 	},
 	"Captain Marvel" : {
 		"events": [
-			["ciao","Captain Marvel"],
-			["ciao","Nick Fury"],
-			["ciao","Captain Marvel"],
-			["ciao","Nick Fury"],
-			["ciao","Captain Marvel"]
+			[" Durante una missione della Starforce Captain Marvel viene attaccata da degli Skrull, alieni mutaforma in perenne guerra coi Kree, che rapiscono il capitano","Captain Marvel"],
+			["Captain Marvel arrivata sulla terra incontra Nick Fury, un agente dello S.H.I.E.L.D., e lo avverte dell'imminente minaccia di un'invasione Skrull. Insieme decidono quindi di andare nella base militare Pegasus, dove è probabile che trovino informazioni su dove è nascosto il motore alieno","Captain Marvel"],
+			["Captain Marvel scopre di essere Carol Danvers e si allea con Talos insieme a Nick Fury","Captain Marvel"],
+			["Captain Marvel combatte contro i suoi ex compagni, la Starforce, liberando a pieno i suoi poteri","Nick Fury"],
+			["Nick Fury riceve un cercapersone potenziato da Carol, che potrà usare per contattarla in caso di estrema necessità. Fury accetta e le consiglia di utilizzare come nome in codice Marvel. ","Nick Fury"],
+			["POST CREDIT: Nella scena durante i titoli di coda, dopo gli eventi di Avengers: Infinity War e lo schiocco di Thanos, gli Avengers restanti,  tentano di capire a chi Nick Fury stava inviando il messaggio con il cercapersone potenziato. Alle loro spalle appare Carol Danvers chiedendo dove sia Fury","Captain Marvel"]
 		],
 		"heroes" : ["Nick Fury","Captain Marvel"]
 	},
@@ -39,9 +40,9 @@
 	"Iron Man 2" : {
 		"events": [
 			["In punto di morte Vanko consegna a suo figlio, Ivan, il progetto del Reattore Arc, che egli stesso aveva inventato insieme a Howard Stark. Ivan inizia dunque a costruire un reattore molto simile a quello di Tony Stark e pianifica la sua vendetta nei confronti dell'inventore. ","Iron Man"],
-			["Tony si reca a Montecarlo e prende parte ad una corsa automobilistica. La corsa viene però interrotta da Ivan Vanko: vestito da steward, Vanko entra nel tracciato e colpisce le vetture in transito, compresa quella di Tony, con delle potenti fruste elettriche alimentate dal Reattore Arc che aveva costruito. Tony combatte contro Vanko, riuscendo a renderlo inoffensivo e a farlo arrestare. ","Iron Man"],
-			["Il sangue di Tony è sempre più inquinato e, in occasione di quella che potrebbe essere la sua ultima festa di compleanno, l'inventore si mostra in pubblico ubriaco e con indosso la propria armatura. Il suo migliore amico, James Rhodes, si infuria per il comportamento sconsiderato di Tony: indossata un'altra delle sue armature, il Mark II, Rhodey combatte contro Tony, per poi fuggire e consegnare la corazza all'esercito. ","War Machine"],
-			[" Fury fornisce a Tony i vecchi appunti e alcuni filmati di Howard Stark. Tony si riconcilia con il padre e dagli indizi lasciati dall'uomo scopre un nuovo elemento, che potrebbe alimentare il Reattore Arc al posto del palladio. L'inventore costruisce un acceleratore di particelle e sintetizza con successo l'elemento; inseritolo nel proprio torace, il nuovo elemento ripulisce completamente il suo sangue e gli salva la vita. ","Iron Man"],
+			["Tony si reca a Montecarlo e prende parte ad una corsa automobilistica che viene però interrotta da Ivan Vanko: vestito da steward, Vanko entra nel tracciato e colpisce le vetture in transito con delle potenti fruste elettriche alimentate dal Reattore Arc che aveva costruito. Tony combatte contro Vanko, riuscendo a farlo arrestare. ","Iron Man"],
+			["Il sangue di Tony è sempre più inquinato e, in occasione di quella che potrebbe essere la sua ultima festa di compleanno, l'inventore si mostra in pubblico ubriaco e con indosso la propria armatura. Il suo migliore amico, James Rhodes, si infuria per il comportamento di Tony, indossa un'altra delle sue armature, il Mark II, e combatte contro Tony, per poi fuggire e consegnare la corazza all'esercito. ","War Machine"],
+			[" Fury fornisce a Tony i vecchi appunti e alcuni filmati di Howard Stark e dagli indizi lasciati dal padre scopre un nuovo elemento, che potrebbe alimentare il Reattore Arc al posto del palladio. L'inventore sintetizza con successo l'elemento; inseritolo nel proprio torace, il nuovo elemento ripulisce completamente il suo sangue e gli salva la vita. ","Iron Man"],
 			["Tony riceve una chiamata da Ivan Vanko, che dallo stabilimento delle Hammer Industries minaccia l'inventore promettendogli vendetta. Tony assembla così la sua nuova armatura, il Mark VI, e vola alla Stark Expo, dove Hammer sta presentando i suoi innovativi droni da combattimento, ","Iron Man"],
 			["Tony insieme a Rhodey viene raggiunto da Vanko che, dotato di un'armatura completa e armata con due fruste elettriche, affronta i due mettendoli in seria difficoltà. Unendo le forze, riescono tuttavia a sconfiggere Vanko, il quale prima di morire fa esplodere l'intera area della Stark Expo; Tony salva appena in tempo Pepper, con la quale scambia un bacio.","Iron Man"],
 			["Fury comunica a Tony che al momento Iron Man viene ritenuto inadeguato per l'iniziativa Vendicatori, il progetto curato dallo S.H.I.E.L.D. di mettere insieme un gruppo di supereroi, ma che l'inventore potrebbe comunque fare da consulente.","Nick Fury"]
@@ -53,7 +54,7 @@
 			["Stark soffre di attacchi di panico in seguito alla battaglia di New York contro i Chitauri. Non riuscendo a dormire, Stark costruisce dozzine di armature di Iron Man, cosa che lo porta a litigare con la sua fidanzata Pepper Potts.","Iron Man"],
 			["Una serie di attacchi terroristici rivendicati dal terrorista conosciuto come il Mandarino lasciano le agennzie di intelligence nel buio a causa della mancanza di prove per rintracciarlo.  Il capo della sicurezza di Stark, Happy Hogan, viene gravemente ferito in uno di questi attacchi, e Stark sfida il Mandarino in diretta televisiva","Iron Man"],
 			["Il Mandarino attacca Stark in una sua villa a Malibù, ma riesce a salvarsi e a fuggire con una delle armature che ha costruito. Tony non ha abbastanza energia per tornare in California e atterra in una cittadina del Tennessee.","Iron Man"],
-			["Stark indaga sulle rovine di un attacco riconducibile al Mandarino. Scopre che le esplosioni sono state causate da soldati sottoposti al siero Extremis. Queste esplosioni sono state poi attribuite a un'organizzazione terroristica in modo da nascondere i difetti di serio. Stark affronta due agenti del Mandarino e riesce a rintracciare la base del Mandarino a Miami. Tony si infiltra nella base del Mandarino, dove scopre che il Mandarino è in realtà un attore inglese, Trevor Slattery, che si dichiara estraneo agli attacchi. Il vero Mandarino si rivela essere Killian, che si è appropriato della ricerca di Maya per curare la sua gamba zoppa e ha poi allargato il programma Extremis ai veterani di guerra feriti, usando Slattery come copertura.","Iron Man"],
+			["Stark riesce a rintracciare la base del Mandarino a Miami. Tony si infiltra nella base e scopre che il Mandarino è in realtà un attore inglese, Trevor Slattery. Il vero Mandarino si rivela essere Killian, che si è appropriato della ricerca di Maya per curare la sua gamba zoppa e ha poi allargato il programma Extremis ai veterani di guerra feriti, usando Slattery come copertura.","Iron Man"],
 			["Dopo aver catturato Stark e ucciso Maya, Killian rapisce Pepper e le inietta il siero Extremis in modo che Stark sia obbligato ad aiutarlo a rendere stabile il siero e salvare così Pepper","Iron Man"],
 			["Killian riesce a far credere ai servizi segreti americani che il Mandarino si trovi in Medio Oriente, portando James Rhodes - ora chiamato Iron Patriot - in una trappola per rubare l'armatura, ma senza successo.","War Machine"],
 			["Killian cerca di uccidere il presidente, ma Stark riesce a salvarlo e a rinchiudere Killian in una delle sue armature, pronta all'autodistruzione, ma non riesce ad ucciderlo. Pepper, resa più forte da Extremis, va in aiuto di Tony e uccide Killian.","Iron Man"],
@@ -69,7 +70,7 @@
 			["Una sera, mentre si trova nella sua camera da letto, Parker incontra Fury, che lo conduce in un laboratorio sotterraneo, dove lo avverte della presenza degli Elementali, esseri composti dai 4 elementi fondamentali: Acqua, Aria, Terra, Fuoco. Peter conosce inoltre Mysterio, l'oscura figura che ha sconfitto che ha sconfitto l'Elementale acquatico.","Nick Fury"],
 			["Si scopre che l'ultimo elementale che dovranno affrontare sarà quello di Fuoco, che apparirà a Praga. Peter, volendo godersi la vacanza con l'obiettivo di dichiarare il suo amore a MJ, rifiuta l'incarico. Il giorno dopo il ragazzo scopre che Fury ha cambiato la meta del loro viaggio, indirizzandola proprio verso Praga.","Nick Fury"],
 			["Una volta giunti in città, Peter si allea con Mysterio, e quando sbuca dal terreno l'Elementale lo affrontano. Dopo una battaglia estenuante, i due riescono a sconfiggerlo. MJ, che era riuscita a fuggire e a nascondersi, raccoglie da terra un oggetto proveniente dal luogo dello scontro.","Spider-Man"],
-			["Beck e Parker entrano in un bar per festeggiare la vittoria e il ragazzo mostra i suoi occhiali, che appartenevano a Tony Stark e che gli sono stati dati da Fury, i quali hanno incorporata l'intelligenza artificiale E.D.I.T.H., che controlla tutte le tecnologie delle Stark Industries. Dopo averglieli consegnati, pensando che Mysterio possa essere il successore di Iron Man, Peter esce dal bar e la verità viene svelata: le persone presenti nella stanza sono tutti collaboratori di Mysterio, il quale si dimostra essere solo un uomo normale, che è stato un dipendente di Stark, licenziato perché mentalmente instabile. L'uomo ha creato tutta la storia degli Elementali, che erano solo trucchi olografici.","Spider-Man"],
+			["Parker mostra i suoi occhiali a Beck, i quali hanno incorporata l'intelligenza artificiale E.D.I.T.H., che controlla tutte le tecnologie delle Stark Industries. Dopo averglieli consegnati, pensando che Mysterio possa essere il successore di Iron Man, la verità viene svelata: Mysterio si dimostra essere solo un uomo normale, che è stato un dipendente licenziato da Stark. L'uomo ha creato tutta la storia degli Elementali, che erano solo trucchi olografici.","Spider-Man"],
 			["All'appuntamento con MJ, Peter scopre con stupore che lei conosce la sua identità segreta, poi la ragazza gli mostra lo strano oggetto che ha raccolto, che proietta quello che sembra essere l'Elementale d'aria che viene combattuto da Mysterio. Peter capisce che Beck lo ha raggirato, e decide di informare Nick Fury di ciò che ha scoperto.","Spider-Man"],
 			["Nella battaglia Spider-Man distrugge quasi tutti i droni da combattimento, che finiscono per sparare proprio a Quentin Beck, che muore dopo un ultimo tentativo di uccidere il ragazzo, il quale riesce a riprendersi gli occhiali e fermare i droni. ","Spider-Man"],
 			["Nella scena durante i titoli di coda, Peter e MJ vedono, su uno schermo gigante di un grattacielo, J. Jonah Jameson del Daily Bugle mostrare un video registrato e manipolato da Beck, che incrimina Spider-Man degli attacchi a Londra e della morte di Mysterio, rivelando infine pubblicamente la vera identità del supereroe.","Spider-Man"],
@@ -79,7 +80,15 @@
 	},
 	"Spider-Man: Homecoming" : {
 		"events": [
-			],
+			["Otto anni dopo, Peter Parker, in seguito al suo incontro con gli Avengers, riprende gli studi presso la Midtown School of Science and Technology, nell'impaziente attesa della sua prossima missione. ","Spider-Man"],
+			["Peter scopre che Jackson Brice / Shocker e Herman Schultz, due complici di Toomes, stanno vendendo alcune armi a un criminale locale, Aaron Davis: Peter interviene, ma viene fermato da Toomes, dotato di una tuta alata; Stark giunge in soccorso di Peter.","Iron Man"],
+			["Peter scopre che Schultz si trova in Maryland, così decide di tornare nella squadra di decathlon e viaggia insieme a loro a Washington. Riesce a impedire a Toomes di rubare delle armi da un camion della Damage Control, ma rimane intrappolato all'interno del magazzino della società","Spider-Man"],
+			[" Tornato a New York, Peter interroga Davis, che gli rivela dove trovare Toomes e i suoi complici. A bordo dello Staten Island Ferry, Peter cattura Mac Gargan, ma quest'ultimo riesce a scappare. Durante lo scontro una delle armi aliene spezza in due il traghetto. Stark giunge nuovamente in soccorso di Peter ","Spider-Man"],
+			["Peter scopre che Toomes è il padre di Liz; durante il tragitto in macchina anche Toomes intuisce l'identità segreta di Peter e gli intima di non immischiarsi nei suoi piani.","Spider-Man"],
+			[" Peter si rende conto che Toomes ha intenzione di dirottare un aereo della Damage Control che trasporta delle armi al nuovo quartiere generale degli Avengers e indossa il suo vecchio costume di Spider-Man","Spider-Man"],
+			["Peter raggiunge il covo di Toomes, lo affronta e lo lascia imprigionato in attesa della polizia","Spider-Man"],
+			["POST CREDIT :  Capitan America registra un videomessaggio di pubblica utilità in cui invita gli spettatori a essere pazienti. ","Captain America"]
+		],
 		"heroes" : ["Nick Fury","Captain America","Iron Man","Spider-Man"]
 	},
 	"The Incredible Hulk" : {
@@ -94,24 +103,42 @@
 		"heroes" : ["Iron Man","Hulk"]
 	},
 	"Thor: Ragnarok" : {
-		"events": [],
-		"heroes" : ["Hulk","Thor","Loki"]
+		"events": [
+			["Thor è ora prigioniero del demone Surtur. Quest'ultimo rivela a Thor che suo padre Odino non si trova più ad Asgard e che il regno degli dèi verrà presto distrutto dal Ragnarök. Ma Thor si libera e sconfigge Surtur","Thor"],
+			["Thor e Loki rintracciano Odino in Norvegia, Odino muore e subito dopo appare Hela che distrugge il martello di Thor, Mjolnir; Thor e Loki cercano di fuggire su Asgard attraverso il Bifrǫst, ma Hela li insegue e li scaraventa nello spazio. ","Thor"],
+			[" Thor precipita sul pianeta Sakaar, un pianeta-discarica e viene catturato da una cacciatrice di taglie chiamata SR-142. Thor scopre che SR-142 è in realtà l'ultima sopravvissuta delle Valchirie, leggendarie combattenti di Asgard","Thor"],
+			["Loki fa rivivere alla donna i momenti in cui le sue compagne furono uccise da Hela. SR-142 decide di aiutare Thor ","Loki"],
+			["Thor insieme a Hulk e SR-142 attraversano un wormhole e arrivano ad Asgard, dove Hela sta attaccando Heimdall e i cittadini ","Thor"],
+			["Durante il combattimento contro Hela, Thor perde un occhio; in quel momento ha una visione di Odino e capisce che l'unico modo per sconfiggere Hela è scatenare Ragnarök.","Thor"],
+			["Thor manda Loki a recuperare la corona di Surtur e ad immergerla nella Fiamma Eterna; Surtur rinasce e distrugge Asgard, uccidendo così Hela.","Thor"],
+			["POST CREDIT: Thor e Loki discutono sull'opportunità di fare rotta sulla terra per rifondare una nuova Asgard, ma una nave spaziale gigantesca gli si piazza davanti. Thanos è arrivato e sta cercando la gemma dell'Infinito contenuta nel Tesseract","Thanos"]
+		],
+		"heroes" : ["Hulk","Thor","Loki","Thanos"]
 	},
 	"Thor: The Dark World" : {
-		"events": [],
+		"events": [
+			["Completata la missione a Vanaheimr, il regno degli elfi della fertilità, e sconfitti gran parte dei Marauders, Thor, Lady Sif e i Tre guerrieri ritornano ad Asgard.","Thor"],
+			["Thor scopre quindi che l'Aether è entrato in Jane e decide di portarla su Asgard, in modo che la superiore scienza del suo mondo la curi","Thor"],
+			["Improvvisamente la nave madre degli Elfi oscuri riesce a penetrare ad Asgard, seminando distruzione. Nonostante gli sforzi di Thor, Malekith giunge sino alla sala del trono di Odino, per estrarre l'Aether dal corpo di Jane.","Thor"],
+			["Thor e Jane, insieme a Loki, liberato da Thor in cambio della vendetta per Frigga, riescono ad uscire da Asgard. Per mezzo di alcune vie segrete note solo a Loki, i tre riescono a giungere nello Svartalfaheimr, il regno degli elfi oscuri","Thor"],
+			["il Dio del Tuono si scaglia contro gli Elfi Oscuri, ma viene aggredito e quasi sconfitto da Kurse. Improvvisamente Loki accorre in aiuto del fratello, ma, viene ferito mortalmente da quest'ultimo. Dopo essersi riappacificato con Thor, Loki muore. ","Loki"],
+			["Giunto a Greenwich, Thor ingaggia una lotta furente contro Malekith, che ha assimilato completamente l'Aether e riesce a sconfiggerlo.","Thor"],
+			["Ritornato ad Asgard per scusarsi, Thor rifiuta il trono. Odino permette tale scelta e Thor, dopo averlo ringraziato, se ne va: non appena uscito, tuttavia, Odino si trasforma rivelandosi Loki,","Thor"],
+			["POST CREDIT: Thor ritorna a Londra per stare con Jane. ","Thor"]
+		],
 		"heroes" : ["Thor","Loki"]
 	},
 	"Thor" : {
 		"events": [
-		["Dopo aver vinto la guerra tra gli Asgardiani e il mondo di Jotunheim, pianeta abitato dai Giganti di Ghiaccio, Odino costrinse alla resa e ad una tregua il loro re, Laufey, privandolo sia dello Scrigno degli Antichi Inverni, fonte del suo immenso potere, sia di suo figlio, il neonato Loki che poi Odino adottò come figlio proprio, nella speranza di riuscire un giorno a porre fine all'ostilità tra le due razze, attraverso di lui. ","Odin"],
-		["Un millennio dopo, alcuni Giganti di Ghiaccio riescono ad introdursi ad Asgard superando la vigilanza di Heimdall, potentissimo guardiano del Bifrost; quindi tentano di recuperare lo Scrigno degli Antichi Inverni, ma vengono eliminati dal Distruttore, il guardiano di quello e di altri potenti dispositivi; la loro azione però fa interrompere la cerimonia d'incoronazione a re di Asgard di Thor, il quale vuole vendetta e si reca a Jotunheim contro la volontà del padre.","Thor"],
+		["Dopo aver vinto la guerra tra gli Asgardiani e il mondo di Jotunheim, pianeta abitato dai Giganti di Ghiaccio, Odino costrinse alla resa e ad una tregua il loro re, Laufey, privandolo sia dello Scrigno degli Antichi Inverni, fonte del suo immenso potere, sia di suo figlio, il neonato Loki che poi Odino adottò come figlio proprio, nella speranza di riuscire a porre fine all'ostilità tra le due razze. ","Odin"],
+		["Un millennio dopo, alcuni Giganti di Ghiaccio riescono ad introdursi ad Asgard e tentano di recuperare lo Scrigno degli Antichi Inverni. la loro azione però fa interrompere la cerimonia d'incoronazione a re di Asgard di Thor, il quale vuole vendetta e si reca a Jotunheim contro la volontà del padre.","Thor"],
 		["Irritato dal comportamento immaturo e irresponsabile del figlio, Odino decide di punire Thor, e di bandirlo dal regno di Asgard, abbandonandolo su Midgard spogliandolo della potenza di cui è dotato; Thor si ritrova in Nuovo Messico dove viene soccorso dagli astrofisici Jane Foster ed Erik Selvig. ","Odin"],
 		["Venuto a sapere della presenza del martello, Thor s'introduce nella base mobile, dove ingaggia una lotta con gli agenti dello S.H.I.E.L.D.. Prova quindi ad estrarre il martello dal cratere dove è conficcato, ma senza successo, poiché l'artefatto non lo ritiene ancora degno; viene così preso e bloccato. ","Thor"],
 		["Loki scopre la sua vera origine e ha una forte discussione con Odino il quale cade nel Sonno di Odino, sonno rigenerante.","Loki"],
 		["Loki, assume il potere di reggente di Asgard. Subito si rammarica coi sostenitori di Thor di non poter sollevare il fratello dall'esilio, impostogli da loro padre. Quindi, sceso sulla Terra, Loki mente a Thor, spiegando che Odino è morto, che lui è il nuovo re di Asgard","Loki"],
 		["Nel frattempo Sif e i tre guerrieri decidono di recarsi a Midgard per recuperare Thor e riportarlo ad Asgard, trasgredendo agli ordini di Loki; venuto a conoscenza del loro tradimento e di quello di Heimdall, Loki prima congela quest'ultimo con l'energia dello Scrigno, poi manda il robot Distruttore sulla Terra, riprogrammato per uccidere Thor.","Loki"],
 		["Dopo che il Distruttore ha sconfitto i tre guerrieri e Sif, Thor decide di sacrificarsi per evitare di coinvolgere altri innocenti; per questo motivo il martello Mjolnir può finalmente tornare, in volo, da Thor, donandogli nuova forza e linfa vitale; questo lo rende inoltre in grado di abbattere finalmente il Distruttore. Thor quindi ottiene da Heimdall, di ritornare ad Asgard. ","Thor"],
-		["Loki intanto ha stretto un patto con Laufey, il re dei Giganti di Ghiaccio: può avere il permesso di recarsi ad Asgard e quindi di uccidere Odino durante il suo sonno magico, in modo da assicurare a Loki di diventare il nuovo re in modo permanente senza essere rinnegato dal popolo asgardiano, in cambio Laufey avrà lo Scrigno. In realtà anche questa è una trappola ordita proprio da Loki, in modo da salvare il padre uccidere Laufey. ","Loki"],
+		["Loki intanto ha stretto un patto con Laufey: può recarsi ad Asgard e uccidere Odino durante il suo sonno magico, in modo da assicurare a Loki di diventare il nuovo re in modo permanente senza essere rinnegato dal popolo asgardiano, in cambio Laufey avrà lo Scrigno. In realtà anche questa è una trappola ordita proprio da Loki, in modo da salvare il padre e uccidere Laufey. ","Loki"],
 		["Fatto ritorno ad Asgard, e conscio del piano di Loki, Thor ingaggia una lotta con lui.","Thor"],
 		["Pur d'impedire la distruzione del mondo dei Giganti di Ghiaccio e quindi la loro completa estinzione, Thor col martello Mjolnir decide di distruggere l'accesso al teletrasporto.","Thor"],
 		["Durante la distruzione del ponte, i due fratelli lottano di nuovo, finché cadono nel vuoto, ma vengono salvati da Odino. Loki tenta di nuovo di spiegare le sue ragioni al padre, il quale, però, non giustifica il suo piano; sentendosi tradito e di nuovo incompreso, Loki si lascia perciò cadere nel vuoto cosmico, apparentemente suicidandosi. ","Loki"],
@@ -120,25 +147,54 @@
 		"heroes" : ["Thor","Loki","Hawkeye","Odin","Nick Fury"]
 	},
 	"Guardians of the Galaxy" : {
-		"events": [],
+		"events": [
+			[" Quill ruba una misteriosa sfera, l'Orb, e Gamora viene mandata a recuperare la sfera. ","Gamora"],
+			["Gamora tende un'imboscata a Quill e gli ruba l'Orb, quindi Quill si lancia all'inseguimento. Durante la lotta che ne segue, intervengono Rocket Raccoon e Groot,","Gamora"],
+			[" I Nova Corps intervengono ed arrestano i quattro, che vengono condotti a Kyln, un carcere spaziale. Rocket Raccoon, Groot e Gamora stessa si alleano per fuggire dalle Kyln. ","Rocket Raccoon"],
+			["Drax, ubriaco, invia un messaggio a Ronan. Ronan arriva su Ovunque e sconfigge Drax, mentre il resto del gruppo cerca di sfuggire ai soldati di Ronan, guidati dalla viscida e crudele sorella di Gamora, Nebula. Nebula distrugge la navetta di Gamora, lasciandola morente nello spazio,","Gamora"],
+			["Rocket Raccoon con Drax e Groot minacciano di attaccare la nave di Yondu per salvare Gamora e Quill, ma quest'ultimo riesce a convincere Yondu ad aiutarlo per recuperare l'Orb","Rocket Raccoon"],
+			["In orbita sopra Xandar giunge la Dark Aster, che viene attaccata dai Ravagers, dai Nova Corps e dal gruppo di Quill, che riesce a penetrare le difese della nave. Ronan usa il potere della Gemma per distruggere la flotta dei Nova Corps. Gamora sconfigge Nebula","Star-Lord"],
+			["Il gruppo si ritrova in balia del potere di Ronan ma Rocket fa schiantare la Milano contro la Dark Aster, che precipita su Xandar. Mentre la nave precipita Groot si sacrifica per i suoi amici, creando uno scudo intorno a loro","Groot"],
+			[" Ronan emerge dalle macerie della nave, Quill riesce a distrarlo, permettendo a Rocket e Drax di distruggere il suo martello. Quill riesce a sottrarre la Gemma all'accusatore e, con l'aiuto di Gamora, Drax e Rocket, riesce a contenerne il potere e ad usarla per disintegrare Ronan. ","Star-Lord"],
+			["In seguito Yondu chiede a Quill di consegnargli la sfera, ma l'umano lo inganna, dandogli una sfera con una bambola all'interno e consegnando la vera sfera ai Nova Corps, in modo da poterla mettere al sicuro.","Star-Lord"],
+			[" I Guardiani partono a bordo della Milano, ricostruita dagli Xandariani, insieme a un vasetto contenente un piccolo Groot, rinato da un rametto. ","Groot"]
+		],
 		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora"]
 	},
 	"Guardians of the Galaxy Vol. 2" : {
-		"events": [],
+		"events": [
+			["Star Lord insieme ai Guardiani della Galassia vengono ingaggiati dalla razza dei Sovereign. Completato il lavoro, i Guardiani si recano da Ayesha, regina dei Sovereign, per ricevere la loro ricompensa: Nebula","Star-Lord"],
+			[" I Guardiani partono a bordo della Milano, ma vengono attaccati dai Sovereign poiché Rocket ha rubato alcune delle batterie. Precipitano sul pianeta Berhert, mentre un misterioso essere a bordo di un'astronave distrugge la flotta dei Sovereign","Rocket Raccoon"],
+			["Nel frattempo Yondu Udonta, viene incaricato da Ayesha di catturare i Guardiani. Yondu e il suo gruppo rintracciano la Milano e catturano Rocket","Rocket Raccoon"],
+			["Peter, Gamora e Drax arrivano sul pianeta di Ego, dove incontrano Mantis, ","Mantis"],
+			["Taserface e i Ravager ammutinati imprigionano Rocket e Yondu a bordo dell'astronave Eclector ","Rocket Raccoon"],
+			[" Groot libera Rocket e Yondu con l'aiuto del Ravager Kraglin. Il gruppo fugge e distrugge l'astronave, uccidendo tutti i Ravager ribelli. ","Groot"],
+			["Nebula arriva sul pianeta di Ego e affronta Gamora. Dopo una lotta, le due cadono all'interno di una grotta nella quale scoprono centinaia di scheletri. ","Gamora"],
+			[" Nel frattempo Ego spiega che, durante i suoi viaggi, ha piantato dei semi per terraformare i pianeti da lui visitati in estensioni di se stesso, ma di non poterli attivare senza l'aiuto di un altro Celestiale. Ora che ha scoperto che Star-Lord ha ereditato i suoi geni, Ego lo usa per attivare i semi, ","Star-Lord"],
+			[" Mantis informa Gamora, Drax e Nebula dei piani di Ego, e il gruppo si reca in soccorso di Peter. ","Mantis"],
+			["Sul pianeta arrivano anche Rocket, Groot, Yondu e Kraglin. Mantis spiega loro che l'unico modo per uccidere Ego è distruggere il nucleo centrale all'interno del pianeta.","Mantis"],
+			["I Guardiani salvano Star Lord e si gettano nelle viscere del pianeta, ma vengono raggiunti dalla flotta dei Sovereign, avvisati da Ego stesso. Rocket crea una bomba usando le batterie rubate e la affida a Groot, mentre Peter usa i suoi poteri per distrarre Ego e il resto dei Guardiani fugge dal pianeta. La bomba esplode ed Ego muore","Groot"],
+			["POST CREDIT: Groot cresce ed entra nella fase adolescenziale, venendo rimproverato da Peter","Groot"]
+		],
 		"heroes" : ["Star-Lord", "Rocket Raccoon", "Groot", "Gamora","Mantis"]
 	},
 	"Doctor Strange" : {
 		"events": [
-			["ciao","Doctor Strange"],
-			["ciao","Doctor Strange"]
+			["Il dottor Stephen Strange viene coinvolto in un incidente automobilistico che compromette le sue mani. L'Antico introduce Strange al mondo della magia. ","Doctor Strange"],
+			["Strange apprende che la Terra è protetta dalle altre dimensioni grazie a tre santuari costruiti a New York, Londra e Hong Kong. Compito degli stregoni è quello di proteggere i santuari","Doctor Strange"],
+			["Kaecilius e i suoi zeloti utilizzano delle pagine rubate per evocare Dormammu della Dimensione Oscura, dove il tempo non esiste. Strange riesce a trattenere Kaecilius e i suoi zeloti impegnati in una battaglia fino all'arrivo dell'Antico e di Mordo.","Doctor Strange"],
+			["Kaecilius rivela a Strange che l’Antico ottiene l’immortalità prendendo potere dalla Dimensione Oscura, dopodiché ferisce mortalmente l'Antico e fugge a Hong Kong. Strange, Mordo e Wong lo inseguono, ma scoprono che Kaecilius ha distrutto il santuario della città e che la Dimensione Oscura sta già divorando la Terra","Doctor Strange"],
+			["Strange utilizza l'Occhio di Agamotto per invertire il tempo e creare un loop temporale in cui intrappola sé stesso e Dormammu, costretti a rivivere in eterno lo stesso momento. Dormammu accetta la proposta di Strange di lasciare la Terra in cambio della libertà dal paradosso, portando con sé Kaecilius e i suoi zeloti. ","Doctor Strange"],
+			["Strange diventa il nuovo guardiano del santuario di New York, dove continua i suoi studi. ","Doctor Strange"],
+			["POST CREDIT : Strange discute con Thor, che ha portato suo fratello Loki sulla Terra per cercare il padre Odino","Thor"]
 		],
-		"heroes" : ["Doctor Strange"]
+		"heroes" : ["Thor","Doctor Strange"]
 	},
 	"Captain America: The Winter Soldier":{
 		"events": [
 		["Il capitano insieme a Natasha Romanoff viene mandato a liberare alcuni ostaggi su una nave dello S.H.I.E.L.D.. A bordo, Steve scopre l'agente Romanoff mentre preleva a sua insaputa dei file dai computer della nave. ","Captain America"],
 		["Fury viene attaccato da alcuni uomini guidati dal Soldato d'Inverno. Fury riesce a fuggire e si nasconde a casa di Rogers, ma dopo aver consegnato a quest'ultimo la chiave USB con i dati acquisiti a bordo della nave, viene colpito a morte dal Soldato d'Inverno","Nick Fury"],
-		["Il capitano si incontra con Natasha; grazie ai dati della chiave USB i due scoprono un bunker segreto dello S.H.I.E.L.D.  la base militare dove Rogers era stato addestrato durante la seconda guerra mondiale; là attivano un supercomputer contenente la coscienza di Arnim Zola, il quale rivela loro che sin dalla fondazione dello S.H.I.E.L.D., l'HYDRA si è segretamente infiltrata nell'organizzazione,","Captain America"],
+		["Il capitano si incontra con Natasha; grazie ai dati della chiave USB i due scoprono un bunker segreto dello S.H.I.E.L.D.  la base militare dove Rogers era stato addestrato durante la seconda guerra mondiale; là attivano un supercomputer contenente la coscienza di Arnim Zola, il quale rivela loro che sin dalla fondazione dello S.H.I.E.L.D. L'HYDRA si è segretamente infiltrata nell'organizzazione.","Captain America"],
 		["Il capitano insieme a Romanoff e Falcon interroga l'agente Jasper Sitwell, in realtà membro dell'HYDRA, il quale rivela loro che Zola ha sviluppato un algoritmo capace di identificare gli individui che potrebbero in futuro opporsi ai piani dell'HYDRA. Grazie ai nuovi Helicarrier sarà possibile eliminare preventivamente questi individui con facilità","Captain America"],
 		["Intanto Fury, che aveva finto la sua morte, sta pianificando una missione per sabotare gli Helicarrier sostituendo i loro chip di controllo.","Nick Fury"],
 		["Rogers comunica all'intera base S.H.I.E.L.D. il vero piano dell'HYDRA e dopo una breve lotta Fury spara a Pierce, uccidendolo","Nick Fury"],
@@ -162,16 +218,24 @@
 					"Falcon","War Machine", "Black Panther","Hawkeye","Vision","Scarlet Witch","Ant-Man"]
 	},
 	"Black Panther":{
-		"events": [],
+		"events": [
+			["Durante l'alba dell'uomo in Africa si schiantò un meteorite composto di vibranio; cinque tribù iniziarono a lottare per possederlo. Un uomo, dopo aver ricevuto una visione dalla Dea Pantera, mangiò l'Erba a Forma di Cuore, una pianta modificata dalle radiazioni del meteorite, che lo rese più forte e veloce","Black Panther"],
+			[" T'Challa scopre che Ulysses Klaue, un trafficante d'armi che in passato aveva rubato il vibranio a Wakanda per rivenderlo, ha rubato un attrezzo di vibranio in un museo di Londra","Black Panther"],
+			["T'Challa, grazie alla nuova armatura potenziata e fatta di nano macchine in vibranio inventate dalla sorella Shuri, cattura il trafficante dopo un folle inseguimento","Black Panther"],
+			["Il sovrano, scopre che circa 25 anni prima N'Jobu, il fratello di re T'Chaka, durante un viaggio di esplorazione negli Stati Uniti, si innamorò di una di loro, tradì il suo popolo e rivelò tutto a Klaue. ","Black Panther"],
+			["A Wakanda arriva un uomo che si presenta come figlio di N'Jobu: Erik Stevens. Ross dopo essersi ripreso lo identifica come un mercenario soprannominato Killmonger. Erik, dopo aver raccontato al consiglio della morte del padre e detto che T'Challa non aveva mantenuto la sua promessa con Klaue, lo sfida. T'Challa, privato di nuovo dei poteri, questa volta ha la peggio.","Black Panther"],
+			["T'Challa e compagni attaccano Killmonger e chi gli è fedele, T'Challa alla fine colpisce a morte il cugino infilzandolo con una delle sue spade","Black Panther"],
+			["POST CREDIT : T'Challa si reca alle Nazioni Unite deciso a non nascondere più il suo regno e condividere le sue conoscenze col mondo.","Black Panther"]
+		],
 		"heroes" : ["Black Panther"]
 	},
 	"The Avengers":{
 		"events":[
 		 ["Nick Fury mette invia gli agenti Coulson e Romanoff a localizzare un gruppo di persone già note alle cartelle dello S.H.I.E.L.D., con l'intento di creare una squadra d'azione speciale. Il progetto è chiamato Vendicatori.","Nick Fury"],
-		 ["Loki manifesta le sue intenzioni: vuole iniziare una guerra. Usando il Tesseract, rubato a Nick Fury, apre un portale spaziale da cui escono i Chitauri, che assaltano l'isola di Manhattan ","Loki"],
-		 ["Tutti i vendicatori, capitanati da Rogers, affluiscono sull'isola di Manhattan per combattere i Chitauri. E' guerra.","Captain America"],
+		 ["Loki manifesta le sue intenzioni: vuole iniziare una guerra. Usando il Tesseract, rubato a Nick Fury, e il dottor Selvig che controlla mentalmente, apre un portale spaziale da cui escono i Chitauri, che assaltano l'isola di Manhattan e cominciano a devastare la zona","Loki"],
+		 ["Tutti i vendicatori, capitanati da Rogers, affluiscono sull'isola di Manhattan per combattere i Chitauri. Rogers e Vedova nera si occupano degli alieni in strada, Hawkeye fa da cecchino sul tetto, Iron Man combatte contro gli alieni volanti e Hulk spacca le astronavi più grandi","Captain America"],
 		 ["Il consiglio ha deciso di inviare un missile nucleare per distruggere i nemici insieme alla popolazione residente: Iron Man, in un atto di estremo sacrificio, usa tutte le forze per deviare il missile verso il portale e lo attraversa, colpendo la nave madre dei Chitauri. ","Iron Man"],
-		 ["Cessata la minaccia, Thor torna ad Asgard con il Tesseract e Loki prigioniero. ","Thor"],
+		 ["Gli Avengers catturano Loki e si impossessano del tesseract. Cessata la minaccia, Thor torna ad Asgard con il Tesseract e Loki prigioniero. ","Thor"],
 		 ["POST CREDIT: The Other parla del fallito attacco alla Terra con il suo misterioso padrone, che si rivela essere Thanos sostenendo che sfidare gli umani sarebbe come lusingare la Morte.","Thanos"]
 		 
 		 ],
@@ -181,7 +245,7 @@
 		"events": [
 		["Gli Asgardiani sono già stati decimati dai membri dell'Ordine Nero e Thor si trova ai piedi di Thanos, il quale costringe Loki a una scelta: la vita del fratello o il Tesseract. Inizialmente esitante, Loki consegna la Gemma a Thanos","Loki"],
 		["Tony Stark, viene raggiunto da Strange e Banner che lo mettono al corrente della situazione. Subito dopo arriva una delle Q-Ship, e si scatena una feroce battaglia. Strange viene catturato e portato a bordo della nave nemica","Iron Man"],
-		["Nel frattempo Wanda Maximoff e Visione sono a Edimburgo, dove si erano ritirati per iniziare una convivenza insieme. I due vengono attaccati da Proxima Media Nox e Gamma Corvi, membri dell'Ordine Nero, che tentano di rubare la Gemma della Mente. Grazie all'intervento di Capitan America, Natasha Romanoff e Falcon, gli scagnozzi di Thanos si ritirano,","Captain America"],
+		["Nel frattempo Wanda Maximoff e Visione sono a Edimburgo, dove si erano ritirati per iniziare una convivenza insieme. I due vengono attaccati da Proxima Media Nox e Gamma Corvi, membri dell'Ordine Nero, che tentano di rubare la Gemma della Mente. Grazie all'intervento di Capitan America, Natasha Romanoff e Falcon, gli scagnozzi di Thanos si ritirano.","Captain America"],
 		["Thanos e Gamora giungono così su Vormir, su cui si trova la Gemma dell'anima, dove li accoglie Teschio Rosso, ritrovatosi lì dopo lo scontro con Capitan America, il quale racconta di essere diventato il custode della Gemma, e rivela a Thanos che per ottenerla dovrà sacrificare l'anima di una persona amata; il titano, con le lacrime agli occhi, decide così di uccidere sua figlia Gamora. ","Thanos"],
 		["Iron Man insieme a Spider Man e Doctor Strange raggiungono Titano, il pianeta natale di Thanos, dove ad accoglierli trovano parte dei Guardiani della Galassia, con cui stabiliscono un'alleanza contro il titano.","Iron Man"],
 		["Nel frattempo su Nidavellir Thor incontra Eitri, l'unico dei Nani rimasto in vita dopo il passaggio di Thanos, che li ha costretti a forgiare il Guanto dell'Infinito per poi spegnere la stella che alimenta la loro fucina, uccidendo tutti. Thor e Rocket riescono ad accendere nuovamente la stella permettendo a Eitri di forgiare una nuova arma: l'ascia Stormbreaker.","Thor"],
@@ -216,7 +280,7 @@
 		["Banner cerca la Gemma del Tempo incontrando l'Antico che, inizialmente riluttante, accetta di prestargliela dopo aver saputo che Strange l'ha volutamente consegnata a Thanos.","Hulk"],
 		["Capitan America riesce a recuperare la Gemma della Mente e successivamente insieme a Stark si spostano nel 1970 per recuperare il Tesseract oltre che nuove particelle Pym, necessarie per continuare a viaggiare nel tempo, dalla base dello S.H.I.E.L.D..","Captain America"],
 		["Romanoff e Clint si recano su Vormir a prendere la Gemma dell'Anima, ma Teschio Rosso li avverte che uno dei due dovrà sacrificarsi. I due si scontrano, in quanto ognuno dei due vuole immolarsi per salvare l'altro, ma alla fine è Natasha a morire, e Clint viene in possesso della Gemma","Hawkeye"],
-		["Quando tutti tornano alla loro epoca con le Gemme dell'Infinito, Bruce Banner, l'unico in grado di sopportare le radiazioni emesse dalle Gemme quando utilizzate, indossa un nuovo Guanto e riporta tutti in vita,","Hulk"],
+		["Quando tutti tornano alla loro epoca con le Gemme dell'Infinito, Bruce Banner, l'unico in grado di sopportare le radiazioni emesse dalle Gemme quando utilizzate, indossa un nuovo Guanto e riporta tutti in vita.","Hulk"],
 		["la Nebula del passato fa materializzare nel presente l'astronave di Thanos che ha portato con se un enorme esercito. Doctor Strange apre portali temporali fa arrivare tutti sul campo di battaglia in aiuto dei vendicatori","Doctor Strange"],
 		[" Iron Man si sacrifica attaccando Thanos, rubando le Gemme dal Guanto e schioccando le dita in un guanto autocostruito per far dissolvere l'esercito del Titano; Thanos, infine, si siede contemplando la sua disfatta, per poi dissolversi. Le radiazioni emesse dal guanto non sono però sopportabili da un essere umano, e Stark muore ","Iron Man"]
 		],
@@ -225,10 +289,28 @@
 					"Falcon","Vision","Star-Lord", "Rocket Raccoon", "Groot", "Gamora","Mantis"]
 	},
 	"Ant-Man":{
-		"events": [],
-		"heroes" : ["Ant-Man"]
+		"events": [
+			["Lang, irrompe in una casa e apre la cassaforte, ma all'interno trova solo una strana tuta, che porta a casa. Dopo aver provato il costume, Lang si restringe alle dimensioni di un insetto. Terrorizzato riporta il vestito nella casa, ma viene arrestato. Pym, il proprietario della casa, fa visita a Lang e lo aiuta a fuggire dalla cella con l'aiuto delle formiche. ","Ant-Man"],
+			["Pym rivela di osservare Scott da tempo e di averlo manipolato per fargli rubare e provare la sua tuta, in modo che possa diventare il nuovo Ant-Man","Ant-Man"],
+			["Scott viene mandato a rubare un dispositivo nel nuovo quartier generale dei nuovi Avengers, dove si scontra brevemente e con successo con Falcon.","Ant-Man"],
+			["Cross perfeziona il Calabrone e ospita una cerimonia di inaugurazione nel suo quartier generale. Lang, insieme alla sua banda e uno sciame di formiche volanti, si infiltra nell'edificio durante l'evento, sabota i server della società e piazza degli esplosivi.","Ant-Man"],
+			["Cross indossa la tuta di Calabrone e affronta Lang, ma quest'ultimo viene arrestato da Paxton dopo aver imprigionato Cross in una zanzariera. Tuttavia, Cross si libera e prende Cassie in ostaggio per attirare Lang in un'altra lotta.","Ant-Man"],
+			["Lang manomette il regolatore della tuta e si riduce a misura subatomica penetrando nella tuta di Cross per sabotarla, facendola esplodere e uccidendolo. Lang scompare nel regno quantico, ma riesce a invertire gli effetti e ritorna nel mondo macroscopico.","Ant-Man"],
+			["POST CREDIT: Pym mostra alla figlia il nuovo costume di Wasp e glielo offre.","Wasp"]
+		],
+		"heroes" : ["Ant-Man","Wasp"]
 	},"Ant-Man and the Wasp":{
-		"events": [],
+		"events": [
+			[" Janet van Dyne si rimpicciolisce tra le molecole di un missile nucleare sovietico, riuscendo a disattivarlo ma rimanendo intrappolata nel regno quantico subatomico.","Wasp"],
+			["Scott Lang scopre un modo per entrare e tornare dal regno quantico. Pym e Hope iniziano a lavorare per ripetere questa impresa, credendo di poter trovare Janet ancora viva","Ant-Man"],
+			["Lang aiuta segretamente Capitan America durante lo scontro tra gli Avengers in violazione degli Accordi di Sokovia. Lang viene condannato per due anni agli arresti domiciliari, ","Ant-Man"],
+			["Scott riceve un apparente messaggio da Janet tramite la sua mente e, nonostante siano rimasti solo pochi giorni alla fine degli arresti domiciliari, decide di chiamare Pym. Vedendo il messaggio come la conferma che Janet è viva, Pym e Hope lavorano per creare un tunnel stabile in modo che possano recuperare Janet","Wasp"],
+			["Hope si impegna ad acquistare una parte necessaria per il tunnel dal commerciante del mercato nero Sonny Burch, ma quest'ultimo realizza il potenziale profitto che può essere guadagnato dalla ricerca di Pym e li tradisce. Una donna eterea mascherata riesce a fuggire con il laboratorio portatile di Pym. ","Wasp"],
+			["Aprendo un passaggio stabile del tunnel, Pym e Hope sono in grado di contattare Janet, che dà loro una posizione precisa dove trovarla,","Wasp"],
+			[" Pym e Hope vengono arrestati e il loro laboratorio portatile viene portato via. Scott decide di aiutare Pym e Hope a fuggire, riuscendo a trovare il laboratorio. Lang e Hope distraggono Ava mentre Pym entra nel regno quantico per recuperare Janet, ","Ant-Man"],
+			["Pym e Janet, grazie all'aiuto di Hope, tornano sani e salvi dal regno quantico, e Janet dona volontariamente parte della sua energia ad Ava per stabilizzarla temporaneamente","Wasp"],
+			["POST CREDIT: Scott, entra nel regno quantico per raccogliere energia quantica in modo da continuare ad aiutare Ava. Poco prima di venir recuperato, Hank, Hope e Janet si dissolvono nel nulla come conseguenza dello schiocco di Thanos, lasciando così Scott intrappolato nel regno quantico","Ant-Man"]
+		],
 		"heroes" : ["Ant-Man","Wasp"]
 	}
 }

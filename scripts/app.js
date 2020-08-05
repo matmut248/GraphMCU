@@ -25,7 +25,6 @@ function createBrush(){
             var selection = d3.event.selection;
             var init = d3.event.selection[0]
             var last = d3.event.selection[1]
-            //resizeBrush(init,last)   
             brushPos = [init,last]         
             var newdomX = updateFocusX(init+100,last+100);
             var newdomY = updateFocusY(newdomX);
@@ -38,28 +37,24 @@ function createBrush(){
             d3.selectAll(".checkbox").property("checked", false)
             firstSelectionMovie = true
             firstSelectionHero = true
+
         })
         .on("end",function(){
-           // resizeBrush()
-            if(!d3.event.selection){
+             if(!d3.event.selection){
                 d3.selectAll(".checkbox").property("checked", false)
                 firstSelectionMovie = true
                 firstSelectionHero = true
                 d3.select(".brush").call(brush.move,defaultSelection)
                 updateEventFocus()
-            }
-            else{
-                var selection = d3.event.selection;
+            }else{
                 var init = d3.event.selection[0]
-                var last = d3.event.selection[1]  
-                var d = resizeBrush(init,last)
-                console.log(d)
-                d3.select(this).transition().duration(200).call(brush.move,d)
+                var last = d3.event.selection[1] 
+                brushPos = resizeBrush(init, last)
+
             }
-            createFilmArea();
-            
+            createFilmArea()
+            d3.select(".checkbox.AND").attr("disabled",true)
         })
-        
     context.append("g")
         .attr("class","x axis")
         .attr("transform","translate(10,"+ (height*0.26) +")")
@@ -78,15 +73,17 @@ function createBrush(){
         .call(brush.move, defaultSelection);
 }
 
+//RESIZE BRUSH CORRETTO
 function resizeBrush(){
     var init = d3.event.selection[0]
     var last = d3.event.selection[1]
     var b = x.bandwidth()
     var newinit = 0, newlast = 0;
-    if (!d3.event.sourceEvent || !d3.event.selection) return;
-    for(var i in mlist){
+    /*if (!d3.event.sourceEvent || !d3.event.selection) return;*/
+    for(var j in mlist){
+        i = parseInt(j)
         if(init >= b*i && init <= b*(i+1)){
-            if( (init-b*i) <= (init-b*(i+1)) ) {
+            if( (init-b*i) <= (b*(i+1)-init) || init==0) {
                 newinit = b*i
                 break
             }
@@ -97,24 +94,27 @@ function resizeBrush(){
         }
     }
 
-    for(var j in mlist){
+    for(var i in mlist){
+        j = parseInt(i)
         if(last >= b*j && last <= b*(j+1)){
-            if( (last-b*j) <= (last-b*(j+1)) ) {
+            if( (last-b*j) <= (b*(j+1)-last) ) {
                 newlast = b*j
                 break
             }
-            else {
+            else {                
                 newlast = b*(j+1)
                 break
             }
         }
     }
-    console.log(init+"   "+last+"   ;   "+newinit+"   "+newlast+"  ;  "+b)
-    if(init != newinit && last != newlast){
-        d3.select(".brush .selection").call(brush.move,[newinit,newlast])
+    if(init != newinit || last != newlast){
+        d3.select(".brush").transition().duration(200).call(brush.move,[newinit,newlast])
     }
+
+    return[newinit, newlast]
     
 }
+
 
 //funzione che modifica l'asse x del focus quando viene spostato il brush
 function updateFocusX(init,last){
@@ -391,8 +391,7 @@ function updateEventFocus(){
                     .attr('r', function(){
                         if(y_focus.domain().length <= 9){return 12}
                         if(y_focus.domain().length <= 14){return 10}
-                        if(y_focus.domain().length <= 20){return 8}
-                        else {return 6}
+                        else {return 8}
                     })
                     .attr('fill', function(d) {return heroToColor[hero]})
                     .attr("eventDetail",e[j][0])
@@ -402,7 +401,6 @@ function updateEventFocus(){
                         var y = d3.event.srcElement.getAttribute("cy");
                         var e = d3.event.srcElement.getAttribute("eventDetail");
                         popUpEvent(parseFloat(x),parseFloat(y),e);
-                        
                     })
                    .on("mouseout",function(){
                         d3.select("body").selectAll(".baloon").remove()//.transition().delay(updateTime/3)
@@ -425,34 +423,34 @@ function popUpEvent(x,y,e){
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-bd.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-20)+"px,"+(y)+"px)")
+            .style("transform","translate("+(x)+"px,"+(y+15)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("transform","translate(0px,-380px)")
+            .style("transform","translate(0px,-410px)")
     }
     if((x-100) <= xL/2 && (y-y_focus.range()[1]) > yL/2){   //siamo in basso a sinistra -> speech baloon in alto a destra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-ad.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-30)+"px,"+(y-280)+"px)")
+            .style("transform","translate("+(x)+"px,"+(y-270)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("transform","translate(0px,-420px)")
+            .style("transform","translate(0px,-450px)")
     }
     if((x-100) > xL/2 && (y-y_focus.range()[1]) <= yL/2){   //siamo in alto a destra -> speech baloon in basso a sinistra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-bs.png')")
             .style("background-size","100% 100%")
-            .style("transform","translate("+(x-480)+"px,"+(y)+"px)")
+            .style("transform","translate("+(x-455)+"px,"+(y+15)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("transform","translate(-10px,-380px)")
+            .style("transform","translate(-10px,-410px)")
     }
     if((x-100) > xL/2 && (y-y_focus.range()[1]) > yL/2){    //siamo in basso a destra -> speech baloon in alto a sinistra
         d3.select("body").selectAll(".baloon")
             .style("background","url('../icon/speech-baloon-as.png')")
             .style("background-size","100% 98%")
             .style("background-repeat","no-repeat")
-            .style("transform","translate("+(x-480)+"px,"+(y-280)+"px)")
+            .style("transform","translate("+(x-450)+"px,"+(y-265)+"px)")
         d3.select("body").selectAll(".baloon p")
-            .style("transform","translate(-10px,-430px)")
+            .style("transform","translate(-10px,-460px)")
     }
     
 
@@ -521,20 +519,76 @@ function updateEventFocusWithFilter(){
     d3.selectAll(".focus.event").transition().duration(updateTime).style("opacity","1");
 }
 
-function createFilterPage(){
 
+function filterAndHero(){
+    filtered = []
+    mlist.forEach(function(movie){      
+        includesAll = true
+        heroes = elist[movie]['heroes']
+        y_focus.domain().forEach(function(hero){
+            if(!heroes.includes(hero)){
+                includesAll = false
+            }
+        })
+        if(includesAll){
+            filtered.push(movie)
+        }
+    })
+    return filtered
+}
+
+function createFilterPage(){
     var filterPageSelectionHeroList = d3.select(".filter-box-hero")
     filterPageSelectionHeroList.append("h3")
         .text("Seleziona l'eroe")
     filterPageSelectionHeroList.append("ul")
-
     var filterPageSelectionMovieList = d3.select(".filter-box-movie")
     filterPageSelectionMovieList.append("h3")
         .text("Seleziona il film")
+    filterPageSelectionMovieList
+        .append("input")
+        .attr("id","filtroAND")
+        .attr("class", "checkbox AND")
+        .attr("type","checkbox")
+        .attr("disabled","true")
+        .on("change",function(){
+            if(this.checked){
+                d3.select(".checkbox.movie").property("checked", false)
+                if(!firstSelectionHero){
+                    temp = filterAndHero()
+                    x_focus.domain(temp)
+                    d3.select(".x.focus")
+                      .transition()
+                      .duration(updateTime)
+                      .call(xAxis_focus)
+                    updateEventFocusWithFilter()
+                    tickFocusResize()
+                    createFilmArea()
+                    
+                }
+
+            }
+            else{
+                updateFocusX(brushPos[0]+100,brushPos[1]+100)
+                d3.select(".x.focus")
+                    .transition()
+                    .duration(updateTime)
+                    .call(xAxis_focus)
+                updateEventFocusWithFilter()
+                tickFocusResize();
+                createFilmArea()
+            }
+        })
+
+    filterPageSelectionMovieList.append("label")
+              .attr("id","label_filtroAND")
+              .attr("for","filtroAND")
+              .text("Inserisci i film con tutti gli eroi che hai selezionato")
+              .style("font-weight","bold")
+              .style("font-size","14px")
+
     filterPageSelectionMovieList.append("ul")
 
-    var domainBeforeFilter = [];
-   
     hlist.forEach(function(hero){
         elem = filterPageSelectionHeroList.select("ul").append("li")
         id = hero + "_hero_checkbox"
@@ -550,6 +604,7 @@ function createFilterPage(){
                 if(firstSelectionHero){
                     y_focus.domain([])
                     firstSelectionHero= false
+                    d3.select(".checkbox.AND").attr("disabled",null)
                 }
                  temp = y_focus.domain()
                  temp.push(this.value)
@@ -573,6 +628,8 @@ function createFilterPage(){
 
                 if(temp.length == 0){
                     firstSelectionHero = true
+                    d3.select(".checkbox.AND").property("checked",false)
+                    d3.select(".checkbox.AND").attr("disabled","true")
                     if(firstSelectionMovie){
                         var xd = updateFocusX(brushPos[0]+100,brushPos[1]+100)
                         var yd = updateFocusY(xd)
@@ -597,6 +654,8 @@ function createFilterPage(){
                             .call(yAxis_focus)
                         updateEventFocus();
                     }
+                    createFilmArea()
+                    tickFocusResize()
                 }
 
                 else{
@@ -623,29 +682,32 @@ function createFilterPage(){
         id = movie+"_movie_checkbox"
         elem.append("input")
         .attr("id",id)
-        .attr("class", "checkbox")
+        .attr("class", "checkbox movie")
         .attr("type","checkbox")
         .attr("value",movie)
         .on("change", function(){
             if(this.checked){
+                if(d3.select(".checkbox.AND").property("checked").valueOf()){
+                    d3.select(".checkbox.AND").property("checked", false)
+                }               
                 if(firstSelectionMovie){
                     domainBeforeFilter = x_focus.domain()
                     x_focus.domain([])
                     firstSelectionMovie = false
                 }
 
-                 temp = x_focus.domain()
-                 temp.push(this.value)
-                 temp = sortArrayAsAnother(temp,mlist)
-                 x_focus.domain(temp)
-                 d3.select(".x.focus")
+                temp = x_focus.domain()
+                temp.push(this.value)
+                temp = sortArrayAsAnother(temp,mlist)
+                x_focus.domain(temp)
+                d3.select(".x.focus")
                    .transition()
                    .duration(updateTime)
                    .call(xAxis_focus)
 
-                 updateEventFocusWithFilter()
-                 tickFocusResize();
-                 createFilmArea();
+                updateEventFocusWithFilter()
+                tickFocusResize();
+                createFilmArea();
 
                  }
             else{
@@ -656,7 +718,6 @@ function createFilterPage(){
                 })
                 if(temp.length == 0){
                     firstSelectionMovie = true
-                    /*DA GESTIRE IL CASO IN CUI SVUOTO IL FILTRO*/
                     if(firstSelectionHero){
                         var xd = updateFocusX(brushPos[0]+100,brushPos[1]+100)
                         console.log(xd)
@@ -699,6 +760,7 @@ function createFilterPage(){
                         tickFocusResize()
                     }
                 }
+
                 createFilmArea();
 
                 }
